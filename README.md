@@ -27,6 +27,8 @@ Describe the main features the application performs.
 
 ## Git
 
+test
+
 Specify which branch will store the latest stable version of the application
 
 ## Success Criteria
