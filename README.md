@@ -3,7 +3,7 @@
 
 ## Description
 
-Describe the project in 2-3 sentences (You can use more). 
+I created an online electronics store with the ability to create a profile, create a shopping cart, and three pages
 
 ## Setup
 
