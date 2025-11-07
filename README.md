@@ -2,7 +2,7 @@
 # CS_2024_project
 
 #Link
-[![XUI](https://cs-project-2025-save1l-production.up.railway.app)
+![My_Project](https://cs-project-2025-save1l-production.up.railway.app)
 
 ## Description
 
