@@ -23,7 +23,6 @@ def check_route(path: str):
         raise AssertionError(f"Expected status 200 for {path}, got {response.status_code}")
 
 
-
 def main():
     try:
         for route in ROUTES:
