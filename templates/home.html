@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="/source/styles/mycss.css">
+  <title>User Profile</title>
+</head>
+
+<body class="bg-dark text-light">
+  <header>
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"><img src="/source/files/logo.jpg" alt="..."></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/pricing">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img style="width: 30px; margin-inline: 0.5em ;" src="/source/files/yt.png" alt="YouTube">
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <img style="width: 25px; margin-inline: 0.5em ;" src="/source/files/tg.png" alt="Telegram">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-12">
+          <div class="card bg-secondary border-0 shadow-lg">
+            <div class="card-body d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between gap-4">
+              <div class="d-flex align-items-center gap-3">
+                <div class="rounded-circle overflow-hidden" style="width: 96px; height: 96px;">
+                  <img src="/source/files/test_logo.png" class="img-fluid" alt="User avatar">
+                </div>
+                <div>
+                  <h2 class="mb-1 text-info">Savel Karatel</h2>
+                  <p class="mb-0 text-light-50">ID: 1059&nbsp;&nbsp;|&nbsp;&nbsp;Country: Estonia</p>
+                </div>
+              </div>
+              <div class="text-lg-end">
+                <p class="mb-2 fs-4 fw-semibold">Store Balance: <span class="text-warning">$1,500.30</span></p>
+                <div class="btn-group" role="group" aria-label="Account actions">
+                  <a href="#" class="btn btn-outline-light">Log out</a>
+                  <a href="#" class="btn btn-outline-danger">Delete account</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card bg-secondary border-0 shadow-lg mb-4">
+            <div class="card-header bg-secondary border-0">
+              <h4 class="mb-0">Account Settings</h4>
+            </div>
+            <div class="card-body">
+              <form class="vstack gap-3">
+                <div>
+                  <label for="settingsEmail" class="form-label" style="color: #78f3f0;">Email</label>
+                  <input type="email" class="form-control bg-dark text-light border-0" id="settingsEmail"
+                    value="example@domain.com">
+                </div>
+                <div>
+                  <label for="settingsPassword" class="form-label" style="color: #78f3f0;">Password</label>
+                  <div class="input-group">
+                    <input type="password" class="form-control bg-dark text-light border-0" id="settingsPassword"
+                      value="Pa$$w0rd">
+                    <button class="btn btn-outline-light" type="button" id="togglePassword"
+                      aria-label="Toggle password visibility">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-eye" viewBox="0 0 16 16">
+                        <path
+                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zm-8 4.5A4.5 4.5 0 1 1 12.5 8 4.5 4.5 0 0 1 8 12.5zm0-1.5A3 3 0 1 0 5 8a3 3 0 0 0 3 3z" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <button type="button" class="btn btn-primary" id="saveSettings">Save changes</button>
+              </form>
+              <div class="alert alert-success mt-3 d-none" role="alert" id="settingsAlert">
+                Changes saved successfully.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-8">
+          <div class="card bg-secondary border-0 shadow-lg mb-4">
+            <div class="card-header bg-secondary border-0 d-flex justify-content-between align-items-center">
+              <h4 class="mb-0">Shopping Cart</h4>
+              <span class="fw-semibold">Total: <span id="cartTotal" class="text-warning">$3,602.30</span></span>
+            </div>
+            <div class="card-body p-0">
+              <div class="table-responsive">
+                <table class="table table-dark table-hover mb-0 align-middle" id="shoppingCartTable">
+                  <thead>
+                    <tr class="text-uppercase text-secondary">
+                      <th scope="col">Qty</th>
+                      <th scope="col">Name</th>
+                      <th scope="col">Country</th>
+                      <th scope="col">Id</th>
+                      <th scope="col">Price</th>
+                      <th scope="col" class="text-end">Action</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td><input type="number" min="1" value="1" class="form-control bg-dark text-light border-0"></td>
+                      <td>Example PC Deluxe</td>
+                      <td>Estonia</td>
+                      <td>1059</td>
+                      <td>$1,500.30</td>
+                      <td class="text-end"><button class="btn btn-sm btn-outline-danger cart-remove">Remove</button></td>
+                    </tr>
+                    <tr>
+                      <td><input type="number" min="1" value="1" class="form-control bg-dark text-light border-0"></td>
+                      <td>Example VR Kit</td>
+                      <td>Estonia</td>
+                      <td>1051</td>
+                      <td>$1,020.00</td>
+                      <td class="text-end"><button class="btn btn-sm btn-outline-danger cart-remove">Remove</button></td>
+                    </tr>
+                    <tr>
+                      <td><input type="number" min="1" value="1" class="form-control bg-dark text-light border-0"></td>
+                      <td>Example GPU Bundle</td>
+                      <td>Estonia</td>
+                      <td>813</td>
+                      <td>$902.00</td>
+                      <td class="text-end"><button class="btn btn-sm btn-outline-danger cart-remove">Remove</button></td>
+                    </tr>
+                    <tr>
+                      <td><input type="number" min="1" value="1" class="form-control bg-dark text-light border-0"></td>
+                      <td>Example Accessories</td>
+                      <td>Estonia</td>
+                      <td>518</td>
+                      <td>$180.00</td>
+                      <td class="text-end"><button class="btn btn-sm btn-outline-danger cart-remove">Remove</button></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 mt-5 bg-secondary text-center">
+    <div class="container">
+      <p class="mb-0">© 2025 CyberTech Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous">
+  </script>
+  <script>
+    const passwordInput = document.getElementById("settingsPassword");
+    const toggleBtn = document.getElementById("togglePassword");
+    if (passwordInput && toggleBtn) {
+      toggleBtn.addEventListener("click", () => {
+        const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
+        passwordInput.setAttribute("type", type);
+        toggleBtn.innerHTML = type === "password"
+          ? `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zm-8 4.5A4.5 4.5 0 1 1 12.5 8 4.5 4.5 0 0 1 8 12.5zm0-1.5A3 3 0 1 0 5 8a3 3 0 0 0 3 3z" />
+            </svg>`
+          : `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
+              <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.757.559l.794.795A5.94 5.94 0 0 1 8 3.5c2.904 0 5.223 2.22 6.473 3.885-.42.547-1.162 1.42-2.235 2.275l.879.879z" />
+              <path d="M11.297 9.176a3 3 0 0 0-4.473-4.473l.823.823a2 2 0 0 1 2.827 2.827l.823.823z" />
+              <path d="M3.35 5.47C2.236 6.329 1.467 7.26 1.052 7.8a.71.71 0 0 0 0 .8c.32.411 1.079 1.262 2.16 2.11 1.081.848 2.469 1.79 4.788 1.79a7 7 0 0 0 2.722-.541l.806.806A7.13 7.13 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.72 2.641-3.238l.708.708z" />
+              <path d="M5.354 7.146A2 2 0 0 0 8.854 10.646l.708.708a3 3 0 0 1-4.242-4.242l-.708-.708z" />
+            </svg>`;
+      });
+    }
+
+    const qtyInputs = document.querySelectorAll(".table input[type='number']");
+    const removeButtons = document.querySelectorAll(".cart-remove");
+    const totalSpan = document.getElementById("cartTotal");
+
+    const recalcTotal = () => {
+      let total = 0;
+      document.querySelectorAll("#shoppingCartTable tbody tr").forEach((row) => {
+        const qtyInput = row.querySelector("input[type='number']");
+        const priceCell = row.querySelector("td:nth-child(5)");
+        if (qtyInput && priceCell) {
+          const qty = parseInt(qtyInput.value, 10) || 0;
+          const price = parseFloat(priceCell.textContent.replace(/[^0-9.]/g, "")) || 0;
+          total += qty * price;
+        }
+      });
+      if (totalSpan) {
+        totalSpan.textContent = `$${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+      }
+    };
+
+    const cartTable = document.getElementById("shoppingCartTable");
+    if (cartTable) {
+      qtyInputs.forEach((input) => input.addEventListener("input", recalcTotal));
+      removeButtons.forEach((btn) =>
+        btn.addEventListener("click", () => {
+          const row = btn.closest("tr");
+          if (row) {
+            row.remove();
+            recalcTotal();
+          }
+        })
+      );
+      recalcTotal();
+    }
+
+    const saveBtn = document.getElementById("saveSettings");
+    const alertBox = document.getElementById("settingsAlert");
+    if (saveBtn && alertBox) {
+      saveBtn.addEventListener("click", () => {
+        alertBox.classList.remove("d-none");
+        alertBox.classList.add("show");
+        setTimeout(() => {
+          alertBox.classList.add("d-none");
+          alertBox.classList.remove("show");
+        }, 2500);
+      });
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css?family=Michroma&display=swap');
+
+body {
+    background: linear-gradient(180deg, #010028 0%, #0e0e5d 33%, #5a0394 66%, #80005b 100%);
+    font-family: Michroma, serif;
+}
+
+p {
+    color: aquamarine;
+}
+
+.nav-link {
+    color: aquamarine;
+}
+
+.navbar-nav .nav-link.active {
+    color: rgb(143, 143, 143);
+}
+
+.navbar-brand img {
+    max-width: 50px;
+}
+
+.navbar.navbar-expand-lg{
+    padding: 0;
+    background-color: rgb(1, 0, 40);
+}
+
+.navbar-toggler {
+    background-color: rgb(204, 204, 204);
+}
+
+.nav-link:hover {
+    color: rgb(0, 133, 88);
+}
+
+.sidebar {
+    color: aquamarine;
+    background: linear-gradient(0deg, #010028 0%, #0e0e5d 33%, #5a0394 66%, #80005b 100%);
+}
+
+.card {
+    border: none;
+
+}
+
+.card-body {
+    background: linear-gradient(180deg, #010028 0%, #0e0e5d 33%, #5a0394 66%, #80005b 100%);
+}
+
+.card a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.slide-text,
+.footer-text {
+    color: aquamarine;
+    margin: auto auto;
+}
+
+@media (max-width: 755px) {
+    .carousel-indicators {
+        display:none;
+    }
+}
+
+footer {
+    background: linear-gradient(0deg, #010028 0%, #0e0e5d 33%, #5a0394 85%, #80005c00 100%);
+
+    
+}
+
+.media-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.call-btn {
+    background: linear-gradient(90deg, #010028 0%, #0e0e5d 33%, #5a0394 66%, #80005c00 100%);
+    border-style: solid;
+
+    border-color: aquamarine;
+    color: aquamarine;
+}
+
+.call-btn:hover {
+    background: linear-gradient(270deg, #010028 0%, #0e0e5d 33%, #5a0394 66%, #80005c00 100%);
+    border-color: rgb(67, 134, 112);
+    color:rgb(67, 134, 112);
+}
+
+.call-anim {
+    animation: call-anim 2s ease 0s infinite normal forwards;
+}
+
+@keyframes call-anim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 0;
+	}
+
+	10% {
+		transform: rotate(2deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-4deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(4deg);
+	}
+
+	80% {
+		transform: rotate(-2deg);
+	}
+
+	90% {
+		transform: rotate(2deg);
+	}
+}

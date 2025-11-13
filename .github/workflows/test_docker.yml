@@ -11,36 +11,41 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Клонируем репозиторий
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # 2. Собираем Docker образ
       - name: Build Docker image
-        run: |
-          docker build -t my-flask-app .
+        run: docker build -t my-flask-app .
 
-      # 3. Запускаем контейнер в фоне
       - name: Run Docker container
         run: |
           docker run -d --name test-server -p 5000:5000 my-flask-app
-          # Даем контейнеру пару секунд на старт
-          sleep 5
 
-      # 4. Проверяем работу сервера через curl
-      - name: Test Flask response
+      - name: Wait for server to be ready
         run: |
-          RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" http://localhost:5000/)
-          echo "Server returned HTTP code: $RESPONSE"
-          if [ "$RESPONSE" -eq 200 ]; then
-            echo "::notice ::✅ Server responded correctly with 200"
-          else
-            echo "::error ::❌ Server responded with $RESPONSE"
-            exit 1
-          fi
+          for i in {1..30}; do
+            if curl -s -f http://localhost:5000/ > /dev/null; then
+              echo "Server is ready!"
+              break
+            fi
+            echo "Waiting for server... ($i/30)"
+            sleep 1
+          done
 
-      # 5. Останавливаем и удаляем контейнер
+      - name: Test routes with curl
+        run: |
+          for route in "/" "/home" "/pricing"; do
+            code=$(curl -s -o /dev/null -w "%{http_code}" "http://localhost:5000${route}")
+            echo "${route} -> ${code}"
+            if [ "$code" -ne 200 ]; then
+              echo "::error ::Route ${route} returned ${code}"
+              exit 1
+            fi
+          done
+          echo "::notice ::All routes responded with 200"
+
       - name: Cleanup
+        if: always()
         run: |
-          docker stop test-server
-          docker rm test-server
+          docker stop test-server || true
+          docker rm test-server || true
