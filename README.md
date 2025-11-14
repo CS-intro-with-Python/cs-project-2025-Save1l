@@ -26,9 +26,9 @@ Static files (images, stylesheets, favicons) live under `templates/source` and a
 
 ```
 .
-├── client.py                 # Requests-based smoke tests for routes
+├── client.py                 # Requests-based tests for routes
 ├── server.py                 # Flask application entry point
-├── templates/                # Jinja/HTML templates and static assets
+├── templates/                # HTML templates and static assets
 ├── requirements.txt          # Python dependencies (Flask, requests)
 ├── Dockerfile                # Container build definition
 └── .github/workflows/        # CI pipelines (Docker + route checks)
@@ -40,14 +40,14 @@ Static files (images, stylesheets, favicons) live under `templates/source` and a
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
-python server.py
+python3 server.py
 ```
 
 The server listens on `http://127.0.0.1:5000`. Static assets are available under `/source/...` (e.g. `http://127.0.0.1:5000/source/styles/mycss.css`).
 
-### Route Smoke Tests
+### Route Tests
 
-With the server running, execute the client smoke tests:
+With the server running, execute the client tests:
 
 ```bash
 python client.py
@@ -61,44 +61,37 @@ The script checks that all public routes respond with HTTP 200 and contain expec
 
 ```bash
 # Build
-docker build -t gaming-storefront .
+docker build -t gaming-store .
 
 # Run
-docker run -d -p 5000:5000 --name gaming-storefront gaming-storefront
+docker run -d -p 5000:5000 --name gaming-store gaming-store
 
 # Check the routes (from host)
 python client.py
 
 # Tear down when finished
-docker stop gaming-storefront
-docker rm gaming-storefront
+docker stop gaming-store
+docker rm gaming-store
 ```
 
 The container runs `flask run` with host `0.0.0.0`, so the application is reachable externally via the mapped port.
 
 ### Development Mode (Hot Reload)
 
-Для разработки с автоматической перезагрузкой при изменении кода используйте volume mount:
+For development with automatic reboot when code changes, use volume mount:
 
 ```bash
-# Вариант 1: Docker Compose (рекомендуется)
-docker-compose up
-
-# Вариант 2: Docker run с volume
+# Docker build
 docker build -t gaming-storefront .
-docker run -d -p 5000:5000 \
-  -v "$(pwd):/app" \
-  -v /app/__pycache__ \
-  --name flask-dev \
-  gaming-storefront
 
-# Остановить
+# Docker run
+docker run -d -p 5000:5000 -v "$(pwd)":/app gaming-storefront
+
+# Stop
 docker stop flask-dev && docker rm flask-dev
-# или для docker-compose:
-docker-compose down
 ```
 
-При изменении файлов (`.py`, `.html`, `.css` и т.д.) Flask автоматически перезагрузит приложение благодаря `FLASK_RUN_RELOAD=true` и монтированию кода.
+When files (`.py`, `.html`, `.css`, etc.) change, Flask will automatically reload the application thanks to `FLASK_RUN_RELOAD=true` and code mounting.
 
 ## CI/CD
 
@@ -110,21 +103,6 @@ Two GitHub Actions workflows (`.github/workflows/test.yml` and `test_docker.yml`
 
 The workflows trigger on pushes and pull requests targeting `main`. A passing status is required before deploying changes.
 
-### Railway Deployment
-
-The app can be deployed to [Railway](https://railway.com/) using the Dockerfile:
-
-```bash
-railway login
-railway init     # create new project and link this repo
-railway up       # builds the Docker image and deploys
-```
-
-Set the service start command to `flask run --host=0.0.0.0 --port=${PORT}` so Railway binds to the provided port. Environment variables (if any) can be managed in the Railway dashboard.
-
 ## Future Improvements
 
 - Add persistence for the shopping cart and profile data
-- Automate Railway deployments via GitHub Actions
-- Expand the client tests with content assertions for each page
-

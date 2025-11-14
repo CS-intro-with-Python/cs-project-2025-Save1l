@@ -24,10 +24,31 @@ p {
 .navbar.navbar-expand-lg{
     padding: 0;
     background-color: rgb(1, 0, 40);
+    position: relative;
+    z-index: 1030;
+}
+
+header {
+    position: relative;
+    z-index: 1030;
+}
+
+section {
+    position: relative;
+    z-index: 1;
 }
 
 .navbar-toggler {
     background-color: rgb(204, 204, 204);
+    position: relative;
+    z-index: 1031;
+    touch-action: manipulation;
+    pointer-events: auto !important;
+    cursor: pointer;
+}
+
+.navbar-toggler-icon {
+    pointer-events: none;
 }
 
 .nav-link:hover {
@@ -62,6 +83,25 @@ p {
 @media (max-width: 755px) {
     .carousel-indicators {
         display:none;
+    }
+    
+    header {
+        position: relative !important;
+        z-index: 1030 !important;
+    }
+    
+    .navbar {
+        position: relative !important;
+        z-index: 1030 !important;
+    }
+    
+    .navbar-toggler {
+        z-index: 1031 !important;
+        position: relative !important;
+    }
+    
+    .bgvideo {
+        z-index: 1 !important;
     }
 }
 

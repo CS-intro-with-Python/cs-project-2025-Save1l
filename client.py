@@ -1,5 +1,4 @@
 import sys
-from urllib.parse import urljoin
 
 import requests
 
@@ -13,7 +12,7 @@ ROUTES = [
 
 
 def check_route(path: str):
-    url = urljoin(BASE_URL.rstrip("/") + "/", path.lstrip("/"))
+    url = BASE_URL + "/" + path.lstrip("/")
     print(f"➡️  Checking {url}")
 
     response = requests.get(url)
@@ -28,10 +27,10 @@ def main():
         for route in ROUTES:
             check_route(route)
     except (requests.RequestException, AssertionError) as exc:
-        print(f"'\033[91m' Test failed: {exc}")
+        print(f"\033[91m Test failed: {exc}")
         sys.exit(1)
 
-    print("'\033[92m' All routes responded successfully")
+    print("\033[92m All routes responded successfully")
 
 
 if __name__ == "__main__":
