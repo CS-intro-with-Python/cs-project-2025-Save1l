@@ -1,7 +1,7 @@
 # CS Project 2025 – Gaming Storefront
 
 #Link
-[My_Project](https://cs-project-2025-save1l-production.up.railway.app/)
+[My_Project](https://cs-project-2025-save1l-production-cbdd.up.railway.app)
 
 ## Description
 
