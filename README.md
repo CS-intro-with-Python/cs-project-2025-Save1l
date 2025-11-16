@@ -82,13 +82,13 @@ For development with automatic reboot when code changes, use volume mount:
 
 ```bash
 # Docker build
-docker build -t gaming-storefront .
+docker build -t gaming-store .
 
 # Docker run
-docker run -d -p 5000:5000 -v "$(pwd)":/app gaming-storefront
+docker run -d -p 5000:5000 -v "$(pwd)":/app --name docker-store gaming-store
 
 # Stop
-docker stop flask-dev && docker rm flask-dev
+docker stop docker-store && docker rm docker-store
 ```
 
 When files (`.py`, `.html`, `.css`, etc.) change, Flask will automatically reload the application thanks to `FLASK_RUN_RELOAD=true` and code mounting.
