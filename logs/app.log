@@ -1,0 +1,20 @@
+[2026-01-09 16:19:31,033] INFO in logger: Logger initialized
+[2026-01-09 16:19:31,206] INFO in logger: Logger initialized
+[2026-01-09 16:20:08,229] INFO in server: Request: GET / from 127.0.0.1
+[2026-01-09 16:20:08,282] INFO in server: Request: GET /source/styles/mycss.css from 127.0.0.1
+[2026-01-09 16:20:08,283] INFO in server: Request: GET /source/styles/bgvideo.css from 127.0.0.1
+[2026-01-09 16:20:08,294] INFO in server: Request: GET /source/files/bgvideo.mp4 from 127.0.0.1
+[2026-01-09 16:20:08,298] INFO in server: Request: GET /source/images/gaming pc.png from 127.0.0.1
+[2026-01-09 16:20:08,298] INFO in server: Request: GET /source/images/gpu.png from 127.0.0.1
+[2026-01-09 16:20:08,302] INFO in server: Request: GET /source/images/laptop.png from 127.0.0.1
+[2026-01-09 16:20:08,303] INFO in server: Request: GET /source/images/other.png from 127.0.0.1
+[2026-01-09 16:20:08,308] INFO in server: Request: GET /source/images/vr.png from 127.0.0.1
+[2026-01-09 16:20:08,309] INFO in server: Request: GET /source/files/phone.png from 127.0.0.1
+[2026-01-09 16:20:08,311] INFO in server: Request: GET /source/files/tg.png from 127.0.0.1
+[2026-01-09 16:20:08,316] INFO in server: Request: GET /source/files/yt.png from 127.0.0.1
+[2026-01-09 16:20:08,318] INFO in server: Request: GET /source/files/logo.jpg from 127.0.0.1
+[2026-01-09 16:20:08,322] INFO in server: Request: GET /source/images/controller.png from 127.0.0.1
+[2026-01-09 16:20:08,323] INFO in server: Request: GET /source/images/cpu.png from 127.0.0.1
+[2026-01-09 16:20:08,326] INFO in server: Request: GET /source/images/acc.png from 127.0.0.1
+[2026-01-09 16:22:16,837] INFO in logger: Logger initialized
+[2026-01-09 16:22:17,094] INFO in logger: Logger initialized

@@ -1,48 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends "base.html" %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
-    <link rel="stylesheet" href="/source/styles/mycss.css">
-    <title>Pricing</title>
-</head>
+{% block title %}Pricing{% endblock %}
 
-<body>
-    <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="/"><img src="/source/files/logo.jpg" alt="..."></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="/home">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="/pricing">Pricing</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <img style="width: 30px; margin-inline: 0.5em ;" src="/source/files/yt.png" alt="">
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link active" href="#">
-                                <img style="width: 25px; margin-inline: 0.5em ;" src="/source/files/tg.png" alt="">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
+{% block content %}
     <section>
         <div class="container-fluid mt-4">
             <div class="row">
@@ -55,7 +15,7 @@
                     <div class="row">
                         <div class="col-lg-4 col-md-6 mt-4">
                             <div class="card">
-                                <a href="#"><img src="/source/images/laptop.png" class="card-img-top" alt="Laptop"></a>
+                                <a href="#"><img src="{{ url_for('static', filename='images/laptop.png') }}" class="card-img-top" alt="Laptop"></a>
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#">Laptops</a></h5>
                                     <p class="card-text"><a href="#">
@@ -69,7 +29,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 mt-4">
                             <div class="card">
-                                <img src="/source/images/gaming pc.png" class="card-img-top" alt="...">
+                                <img src="{{ url_for('static', filename='images/gaming pc.png') }}" class="card-img-top" alt="Gaming PC">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#">Gaming PC</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
@@ -81,7 +41,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 mt-4">
                             <div class="card">
-                                <img src="/source/images/vr.png" class="card-img-top" alt="...">
+                                <img src="{{ url_for('static', filename='images/vr.png') }}" class="card-img-top" alt="VR">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#">VR</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
@@ -93,7 +53,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 mt-4">
                             <div class="card">
-                                <img src="/source/images/acc.png" class="card-img-top" alt="Laptop">
+                                <img src="{{ url_for('static', filename='images/acc.png') }}" class="card-img-top" alt="Accessories">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#">Acc</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
@@ -105,7 +65,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 mt-4">
                             <div class="card">
-                                <img src="/source/images/controller.png" class="card-img-top" alt="...">
+                                <img src="{{ url_for('static', filename='images/controller.png') }}" class="card-img-top" alt="Controller">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#">Controller</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
@@ -117,7 +77,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 mt-4">
                             <div class="card">
-                                <img src="/source/images/cpu.png" class="card-img-top" alt="...">
+                                <img src="{{ url_for('static', filename='images/cpu.png') }}" class="card-img-top" alt="CPU">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#">Cpu</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
@@ -129,7 +89,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 mt-4">
                             <div class="card">
-                                <img src="/source/images/gpu.png" class="card-img-top" alt="Laptop">
+                                <img src="{{ url_for('static', filename='images/gpu.png') }}" class="card-img-top" alt="GPU">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#">Gpu</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
@@ -141,7 +101,7 @@
                         </div>
                         <div class="col-lg-4 col-md-6 mt-4">
                             <div class="card">
-                                <img src="/source/images/other.png" class="card-img-top" alt="...">
+                                <img src="{{ url_for('static', filename='images/other.png') }}" class="card-img-top" alt="Other">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="#">Other</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
@@ -155,7 +115,7 @@
                             <p>Can we help you?</p>
                         </div>
                         <div class="col-lg-12 col-md-12 text-center">
-                            <img class="call-anim" style="width: 40px;" src="/source/files/phone.png" alt="">
+                            <img class="call-anim" style="width: 40px;" src="{{ url_for('static', filename='files/phone.png') }}" alt="Phone">
                         </div>
 
 
@@ -192,29 +152,5 @@
         </div>
 
     </section>
+{% endblock %}
 
-    <footer class="mt-4">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-4 col-md-12 footer-text text-center">
-                    <p class="my-3">All Rights Reserved 2022</p>
-                </div>
-                <div class="col-lg-4 col-md-12 footer-text text-center">
-                    <p class="my-3">Contacts<br>Jod<br>Our Team</p>
-                </div>
-                <div class="col-lg-4 col-md-12 footer-text media-links">
-                    <img style="width: 40px; margin-inline: 0.5em ;" src="/source/files/yt.png" alt="">
-                    <img style="width: 40px; margin-inline: 0.5em ;" src="/source/files/tg.png" alt="">
-
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
-        crossorigin="anonymous"></script>
-</body>
-
-
-</html>
