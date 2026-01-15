@@ -1,7 +1,8 @@
 flask
-requests
 flask-sqlalchemy
-psycopg2-binary
 flask-login
+flask-restx
 authlib
+psycopg2-binary
+requests
 pytest

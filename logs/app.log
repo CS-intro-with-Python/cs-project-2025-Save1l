@@ -103,3 +103,354 @@
 [2026-01-15 12:16:28,182] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
 [2026-01-15 12:16:28,193] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
 [2026-01-15 12:16:28,206] INFO in server: Request: GET /source/files/bgvideo.mp4 from 172.19.0.1
+[2026-01-15 15:23:54,335] INFO in logger: Logger initialized
+[2026-01-15 13:24:06,897] INFO in logger: Logger initialized
+[2026-01-15 13:24:07,513] INFO in logger: Logger initialized
+[2026-01-15 13:24:08,180] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:24:08,189] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:24:08,197] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:24:08,203] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 13:24:08,235] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 13:24:08,249] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 13:24:18,034] INFO in logger: Logger initialized
+[2026-01-15 13:24:18,636] INFO in logger: Logger initialized
+[2026-01-15 13:24:19,319] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:24:19,326] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:24:19,334] INFO in server: Request: GET /api/cart from 172.19.0.1
+[2026-01-15 13:24:19,340] INFO in server: Request: GET /auth/login from 172.19.0.1
+[2026-01-15 15:24:33,638] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:24:33,759] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:24:33,856] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:24:33,957] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:24:34,046] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:24:34,149] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:24:34,251] INFO in server: Request: DELETE /api/cart/remove/99999 from 127.0.0.1
+[2026-01-15 15:24:34,393] INFO in server: Request: PUT /api/cart/update/99999 from 127.0.0.1
+[2026-01-15 15:24:34,491] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:24:34,583] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:24:42,205] INFO in logger: Logger initialized
+[2026-01-15 13:24:52,228] INFO in logger: Logger initialized
+[2026-01-15 13:24:52,829] INFO in logger: Logger initialized
+[2026-01-15 13:24:53,510] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:24:53,518] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:24:53,526] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:24:53,534] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 13:24:53,568] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 13:24:53,585] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 13:25:03,274] INFO in logger: Logger initialized
+[2026-01-15 13:25:03,879] INFO in logger: Logger initialized
+[2026-01-15 13:25:04,563] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:25:04,570] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 13:25:04,578] INFO in server: Request: GET /api/cart from 172.19.0.1
+[2026-01-15 13:25:04,584] INFO in server: Request: GET /auth/login from 172.19.0.1
+[2026-01-15 15:25:07,195] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:25:07,301] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:25:07,404] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:25:07,492] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:25:07,586] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:25:07,684] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:25:07,779] INFO in server: Request: DELETE /api/cart/remove/99999 from 127.0.0.1
+[2026-01-15 15:25:07,928] INFO in server: Request: PUT /api/cart/update/99999 from 127.0.0.1
+[2026-01-15 15:25:08,020] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:25:08,111] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:56:37,038] INFO in logger: Logger initialized
+[2026-01-15 15:56:37,066] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:56:37,088] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:56:37,111] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:56:37,133] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:56:37,157] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 15:56:37,179] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:56:37,200] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:56:37,221] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:56:37,242] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 15:56:37,262] INFO in server: Request: PUT /api/cart/update/99999 from 127.0.0.1
+[2026-01-15 15:56:37,295] INFO in server: Request: DELETE /api/cart/remove/99999 from 127.0.0.1
+[2026-01-15 15:56:37,315] INFO in server: Request: GET / from 127.0.0.1
+[2026-01-15 15:56:37,350] INFO in server: Request: GET /home from 127.0.0.1
+[2026-01-15 15:56:37,376] INFO in server: Request: GET /pricing from 127.0.0.1
+[2026-01-15 15:46:36,552] INFO in logger: Logger initialized
+[2026-01-15 15:46:36,898] INFO in logger: Logger initialized
+[2026-01-15 17:48:57,966] INFO in logger: Logger initialized
+[2026-01-15 17:48:58,021] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:48:58,040] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:48:58,060] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:48:58,077] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:48:58,094] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:48:58,112] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 17:48:58,132] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 17:48:58,152] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 17:48:58,169] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 17:48:58,187] INFO in server: Request: PUT /api/cart/update/99999 from 127.0.0.1
+[2026-01-15 17:48:58,211] INFO in server: Request: DELETE /api/cart/remove/99999 from 127.0.0.1
+[2026-01-15 17:48:58,229] INFO in server: Request: GET / from 127.0.0.1
+[2026-01-15 17:48:58,259] INFO in server: Request: GET /home from 127.0.0.1
+[2026-01-15 17:48:58,281] INFO in server: Request: GET /pricing from 127.0.0.1
+[2026-01-15 15:51:25,954] INFO in logger: Logger initialized
+[2026-01-15 15:51:26,307] INFO in logger: Logger initialized
+[2026-01-15 15:51:28,497] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:28,503] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:28,508] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:28,512] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:28,517] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:28,521] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 15:51:28,569] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 15:51:28,578] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 15:51:28,582] INFO in server: Request: GET /static/ from 172.19.0.1
+[2026-01-15 15:51:28,586] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:28,590] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:28,593] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:28,597] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:28,601] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:51:42,786] INFO in logger: Logger initialized
+[2026-01-15 15:51:42,806] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:42,810] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:42,814] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:42,818] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:42,822] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:42,826] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 15:51:42,829] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 15:51:42,833] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 15:51:42,836] INFO in server: Request: GET /static/ from 172.19.0.1
+[2026-01-15 15:51:42,838] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:42,841] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:42,844] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:42,846] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 15:51:42,848] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:51:42,854] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:51:42,876] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:51:42,895] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:51:42,911] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:51:42,927] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 17:51:42,943] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 17:51:42,959] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 17:51:42,974] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 17:51:42,990] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 17:51:43,006] INFO in server: Request: PUT /api/cart/update/99999 from 127.0.0.1
+[2026-01-15 17:51:43,030] INFO in server: Request: DELETE /api/cart/remove/99999 from 127.0.0.1
+[2026-01-15 17:51:43,047] INFO in server: Request: GET / from 127.0.0.1
+[2026-01-15 17:51:43,071] INFO in server: Request: GET /home from 127.0.0.1
+[2026-01-15 17:51:43,092] INFO in server: Request: GET /pricing from 127.0.0.1
+[2026-01-15 18:50:55,107] INFO in logger: Logger initialized
+[2026-01-15 18:51:13,361] INFO in logger: Logger initialized
+[2026-01-15 18:51:13,714] INFO in logger: Logger initialized
+[2026-01-15 16:55:24,665] INFO in logger: Logger initialized
+[2026-01-15 16:55:25,122] INFO in logger: Logger initialized
+[2026-01-15 16:55:42,576] INFO in server: Request: GET /auth/login from 172.19.0.1
+[2026-01-15 16:55:46,990] INFO in server: Request: GET /auth/callback from 172.19.0.1
+[2026-01-15 16:55:47,575] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 16:55:47,633] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 16:55:47,636] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 16:55:47,639] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 16:55:47,640] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 16:55:47,642] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 16:55:58,994] INFO in server: Request: GET /api/cart from 172.19.0.1
+[2026-01-15 16:55:59,038] INFO in server: Request: GET /favicon.ico from 172.19.0.1
+[2026-01-15 16:56:10,253] INFO in server: Request: GET /api/cart/add/3 from 172.19.0.1
+[2026-01-15 16:56:10,288] INFO in server: Request: GET /favicon.ico from 172.19.0.1
+[2026-01-15 16:56:30,159] INFO in server: Request: GET /api/cart/add from 172.19.0.1
+[2026-01-15 16:57:01,245] INFO in server: Request: GET /api/cart/update/1 from 172.19.0.1
+[2026-01-15 16:58:45,760] INFO in server: Request: GET /api/cart/update/1 from 172.19.0.1
+[2026-01-15 17:01:09,704] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:01:09,731] INFO in server: Request: GET /favicon.ico from 172.19.0.1
+[2026-01-15 19:06:49,877] INFO in logger: Logger initialized
+[2026-01-15 19:06:50,224] INFO in logger: Logger initialized
+[2026-01-15 19:19:14,050] INFO in logger: Logger initialized
+[2026-01-15 19:19:44,122] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:19:44,149] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:19:44,167] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:19:44,190] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:19:44,211] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:19:44,231] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:19:44,250] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:19:44,269] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:19:44,287] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:19:44,305] INFO in server: Request: PUT /api/cart/update/99999 from 127.0.0.1
+[2026-01-15 19:19:44,331] INFO in server: Request: DELETE /api/cart/remove/99999 from 127.0.0.1
+[2026-01-15 19:19:44,349] INFO in server: Request: GET / from 127.0.0.1
+[2026-01-15 19:19:44,387] INFO in server: Request: GET /home from 127.0.0.1
+[2026-01-15 19:19:44,409] INFO in server: Request: GET /pricing from 127.0.0.1
+[2026-01-15 19:20:42,169] INFO in logger: Logger initialized
+[2026-01-15 17:20:42,265] INFO in logger: Logger initialized
+[2026-01-15 17:20:42,681] INFO in logger: Logger initialized
+[2026-01-15 17:20:43,192] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:20:43,199] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:20:43,205] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:20:43,211] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:20:43,215] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:20:43,220] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 17:20:43,247] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 17:20:43,258] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 17:20:43,263] INFO in server: Request: GET /static/ from 172.19.0.1
+[2026-01-15 17:20:43,267] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:20:43,272] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:20:43,275] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:20:43,280] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:20:43,285] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 19:20:43,294] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:20:43,314] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:20:43,332] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:20:43,350] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:20:43,368] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:20:43,386] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:20:43,404] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:20:43,422] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:20:43,442] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:20:43,459] INFO in server: Request: PUT /api/cart/update/99999 from 127.0.0.1
+[2026-01-15 19:20:43,484] INFO in server: Request: DELETE /api/cart/remove/99999 from 127.0.0.1
+[2026-01-15 19:20:43,503] INFO in server: Request: GET / from 127.0.0.1
+[2026-01-15 19:20:43,531] INFO in server: Request: GET /home from 127.0.0.1
+[2026-01-15 19:20:43,553] INFO in server: Request: GET /pricing from 127.0.0.1
+[2026-01-15 19:21:36,209] INFO in logger: Logger initialized
+[2026-01-15 17:21:36,306] INFO in logger: Logger initialized
+[2026-01-15 17:21:36,740] INFO in logger: Logger initialized
+[2026-01-15 17:21:37,233] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:21:37,240] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:21:37,246] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:21:37,251] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:21:37,257] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:21:37,264] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 17:21:37,294] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 17:21:37,304] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 17:21:37,309] INFO in server: Request: GET /static/ from 172.19.0.1
+[2026-01-15 17:21:37,314] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:21:37,319] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:21:37,324] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:21:37,328] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 17:21:37,332] INFO in server: Request: GET /health from 172.19.0.1
+[2026-01-15 19:21:37,342] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:21:37,363] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:21:37,384] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:21:37,401] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:21:37,421] INFO in server: Request: POST /api/cart/add from 127.0.0.1
+[2026-01-15 19:21:37,445] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:21:37,464] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:21:37,483] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:21:37,501] INFO in server: Request: PUT /api/cart/update/1 from 127.0.0.1
+[2026-01-15 19:21:37,518] INFO in server: Request: PUT /api/cart/update/99999 from 127.0.0.1
+[2026-01-15 19:21:37,541] INFO in server: Request: DELETE /api/cart/remove/99999 from 127.0.0.1
+[2026-01-15 19:21:37,560] INFO in server: Request: GET / from 127.0.0.1
+[2026-01-15 19:21:37,588] INFO in server: Request: GET /home from 127.0.0.1
+[2026-01-15 19:21:37,610] INFO in server: Request: GET /pricing from 127.0.0.1
+[2026-01-15 17:22:06,659] INFO in logger: Logger initialized
+[2026-01-15 17:22:07,137] INFO in logger: Logger initialized
+[2026-01-15 17:42:12,945] INFO in logger: Logger initialized
+[2026-01-15 17:42:13,244] INFO in logger: Logger initialized
+[2026-01-15 17:42:22,753] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 17:42:22,826] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 17:42:22,827] INFO in server: Request: GET /source/styles/bgvideo.css from 172.19.0.1
+[2026-01-15 17:42:22,840] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 17:42:22,841] INFO in server: Request: GET /source/images/cpu.png from 172.19.0.1
+[2026-01-15 17:42:22,843] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 17:42:22,843] INFO in server: Request: GET /source/images/controller.png from 172.19.0.1
+[2026-01-15 17:42:22,844] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 17:42:22,845] INFO in server: Request: GET /source/images/acc.png from 172.19.0.1
+[2026-01-15 17:42:22,850] INFO in server: Request: GET /source/files/bgvideo.mp4 from 172.19.0.1
+[2026-01-15 17:42:22,851] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
+[2026-01-15 17:42:22,852] INFO in server: Request: GET /source/images/gaming pc.png from 172.19.0.1
+[2026-01-15 17:42:22,856] INFO in server: Request: GET /source/images/gpu.png from 172.19.0.1
+[2026-01-15 17:42:22,860] INFO in server: Request: GET /source/images/other.png from 172.19.0.1
+[2026-01-15 17:42:22,862] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
+[2026-01-15 17:42:22,860] INFO in server: Request: GET /source/images/laptop.png from 172.19.0.1
+[2026-01-15 17:42:25,109] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 17:42:25,169] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 17:42:25,173] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 17:42:25,175] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 17:42:25,177] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 17:42:25,177] INFO in server: Request: GET /source/images/laptop.png from 172.19.0.1
+[2026-01-15 17:42:25,180] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
+[2026-01-15 17:42:25,183] INFO in server: Request: GET /source/images/gaming pc.png from 172.19.0.1
+[2026-01-15 17:42:25,184] INFO in server: Request: GET /source/images/acc.png from 172.19.0.1
+[2026-01-15 17:42:25,186] INFO in server: Request: GET /source/images/controller.png from 172.19.0.1
+[2026-01-15 17:42:25,189] INFO in server: Request: GET /source/images/cpu.png from 172.19.0.1
+[2026-01-15 17:42:25,194] INFO in server: Request: GET /source/images/other.png from 172.19.0.1
+[2026-01-15 17:42:25,194] INFO in server: Request: GET /source/images/gpu.png from 172.19.0.1
+[2026-01-15 17:42:25,197] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
+[2026-01-15 17:42:26,227] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 17:42:26,263] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 17:42:26,272] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 17:42:26,273] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 17:42:26,275] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 17:42:26,276] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 17:42:34,255] INFO in server: Request: GET /swagger from 172.19.0.1
+[2026-01-15 17:42:34,292] INFO in server: Request: GET /swaggerui/droid-sans.css from 172.19.0.1
+[2026-01-15 17:42:34,295] INFO in server: Request: GET /swaggerui/swagger-ui-standalone-preset.js from 172.19.0.1
+[2026-01-15 17:42:34,295] INFO in server: Request: GET /swaggerui/swagger-ui-bundle.js from 172.19.0.1
+[2026-01-15 17:42:34,293] INFO in server: Request: GET /swaggerui/swagger-ui.css from 172.19.0.1
+[2026-01-15 17:42:34,428] INFO in server: Request: GET /swaggerui/favicon-32x32.png from 172.19.0.1
+[2026-01-15 17:42:34,454] INFO in server: Request: GET /api/swagger.json from 172.19.0.1
+[2026-01-15 17:45:18,680] INFO in server: Request: POST /api/cart/add from 172.19.0.1
+[2026-01-15 17:45:23,567] INFO in server: Request: POST /api/cart/add from 172.19.0.1
+[2026-01-15 17:45:39,516] INFO in server: Request: POST /api/cart/add from 172.19.0.1
+[2026-01-15 17:45:47,386] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 17:45:47,423] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 17:45:47,427] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 17:45:47,428] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 17:45:47,429] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
+[2026-01-15 17:45:47,428] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 17:45:47,430] INFO in server: Request: GET /source/images/gaming pc.png from 172.19.0.1
+[2026-01-15 17:45:47,428] INFO in server: Request: GET /source/images/laptop.png from 172.19.0.1
+[2026-01-15 17:45:47,434] INFO in server: Request: GET /source/images/acc.png from 172.19.0.1
+[2026-01-15 17:45:47,438] INFO in server: Request: GET /source/images/controller.png from 172.19.0.1
+[2026-01-15 17:45:47,439] INFO in server: Request: GET /source/images/cpu.png from 172.19.0.1
+[2026-01-15 17:45:47,442] INFO in server: Request: GET /source/images/gpu.png from 172.19.0.1
+[2026-01-15 17:45:47,446] INFO in server: Request: GET /source/images/other.png from 172.19.0.1
+[2026-01-15 17:45:47,446] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
+[2026-01-15 17:46:05,874] INFO in server: Request: GET /swagger from 172.19.0.1
+[2026-01-15 17:46:05,905] INFO in server: Request: GET /swaggerui/droid-sans.css from 172.19.0.1
+[2026-01-15 17:46:05,908] INFO in server: Request: GET /swaggerui/swagger-ui.css from 172.19.0.1
+[2026-01-15 17:46:05,909] INFO in server: Request: GET /swaggerui/swagger-ui-bundle.js from 172.19.0.1
+[2026-01-15 17:46:05,910] INFO in server: Request: GET /swaggerui/swagger-ui-standalone-preset.js from 172.19.0.1
+[2026-01-15 17:46:06,075] INFO in server: Request: GET /api/swagger.json from 172.19.0.1
+[2026-01-15 17:46:35,193] INFO in server: Request: PUT /api/cart/update/2 from 172.19.0.1
+[2026-01-15 17:46:36,176] INFO in server: Request: PUT /api/cart/update/2 from 172.19.0.1
+[2026-01-15 17:46:44,783] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 17:46:44,804] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 17:46:44,809] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 17:46:44,811] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 17:46:44,813] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 17:46:44,816] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 17:46:46,508] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 17:46:46,552] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 17:46:46,557] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 17:46:46,560] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 17:46:46,561] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 17:46:46,563] INFO in server: Request: GET /source/images/laptop.png from 172.19.0.1
+[2026-01-15 17:46:46,565] INFO in server: Request: GET /source/images/gaming pc.png from 172.19.0.1
+[2026-01-15 17:46:46,568] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
+[2026-01-15 17:46:46,570] INFO in server: Request: GET /source/images/acc.png from 172.19.0.1
+[2026-01-15 17:46:46,572] INFO in server: Request: GET /source/images/controller.png from 172.19.0.1
+[2026-01-15 17:46:46,574] INFO in server: Request: GET /source/images/cpu.png from 172.19.0.1
+[2026-01-15 17:46:46,575] INFO in server: Request: GET /source/images/gpu.png from 172.19.0.1
+[2026-01-15 17:46:46,577] INFO in server: Request: GET /source/images/other.png from 172.19.0.1
+[2026-01-15 17:46:46,582] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
+[2026-01-15 17:46:50,530] INFO in server: Request: GET /auth/login from 172.19.0.1
+[2026-01-15 17:46:54,192] INFO in server: Request: GET /auth/callback from 172.19.0.1
+[2026-01-15 17:46:54,827] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 17:46:54,867] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 17:46:54,873] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 17:46:54,874] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 17:46:54,875] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 17:46:54,876] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 17:47:12,303] INFO in server: Request: GET /swagger from 172.19.0.1
+[2026-01-15 17:47:12,332] INFO in server: Request: GET /swaggerui/droid-sans.css from 172.19.0.1
+[2026-01-15 17:47:12,334] INFO in server: Request: GET /swaggerui/swagger-ui.css from 172.19.0.1
+[2026-01-15 17:47:12,335] INFO in server: Request: GET /swaggerui/swagger-ui-standalone-preset.js from 172.19.0.1
+[2026-01-15 17:47:12,338] INFO in server: Request: GET /swaggerui/swagger-ui-bundle.js from 172.19.0.1
+[2026-01-15 17:47:12,493] INFO in server: Request: GET /api/swagger.json from 172.19.0.1
+[2026-01-15 17:47:35,403] INFO in server: Request: DELETE /api/cart/remove/1 from 172.19.0.1
+[2026-01-15 17:47:36,941] INFO in server: Request: DELETE /api/cart/remove/1 from 172.19.0.1
+[2026-01-15 17:48:00,322] INFO in server: Request: PUT /api/cart/update/2 from 172.19.0.1
+[2026-01-15 17:48:01,085] INFO in server: Request: PUT /api/cart/update/2 from 172.19.0.1
+[2026-01-15 17:48:12,567] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 17:48:12,591] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 17:48:12,594] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 17:48:12,595] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 17:48:12,596] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 17:48:12,597] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 17:48:13,361] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 17:48:13,380] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 17:48:13,388] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 17:48:13,388] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 17:48:13,389] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 17:48:13,391] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 17:50:20,787] INFO in logger: Logger initialized

@@ -1,15 +1,16 @@
 # CS Project 2025 – Gaming Storefront
 
-#Link
-[My_Project](https://cs-project-2025-save1l-production-cbdd.up.railway.app)
-
 ## Description
 
 This project implements a small e-commerce themed web app built with Flask. It exposes three HTML pages (`/`, `/home`, and `/pricing`) styled with Bootstrap and custom assets. The project includes:
 
 - a Flask server that renders the storefront pages and serves static assets
+- Google OAuth 2.0 authentication for user login
+- Shopping cart functionality with PostgreSQL database persistence
+- Swagger UI for interactive API documentation
+- Logging
 - a requests-based client used for automated route checks
-- Docker support for reproducible builds and containerized execution
+- Docker Compose setup with web and db containers
 - GitHub Actions workflows that build the image, run the container, and exercise the HTTP endpoints
 
 ## Application Routes
@@ -19,6 +20,8 @@ This project implements a small e-commerce themed web app built with Flask. It e
 | `/`        | `templates/index.html`  | Landing page with catalog overview     |
 | `/home`    | `templates/home.html`   | User profile with shopping cart widget |
 | `/pricing` | `templates/pricing.html`| Product pricing cards                  |
+| `/swagger` | -                       | Swagger UI API documentation           |
+
 
 Static files (images, stylesheets, favicons) live under `templates/source` and are exposed via the `/source` prefix.
 
@@ -26,13 +29,30 @@ Static files (images, stylesheets, favicons) live under `templates/source` and a
 
 ```
 .
-├── client.py                 # Requests-based tests for routes
 ├── server.py                 # Flask application entry point
+├── models.py                 # SQLAlchemy models (User, CartItem)
+├── auth.py                   # OAuth authentication blueprint
+├── logger.py                 # Logging configuration
+├── client.py                 # Requests-based tests for routes
 ├── templates/                # HTML templates and static assets
-├── requirements.txt          # Python dependencies (Flask, requests)
+├── tests/
+│   ├── unit_test.py          # Unit tests with pytest
+│   └── integration_test.py   # Docker integration tests
+├── logs/                     # Application logs
+├── requirements.txt          # Python dependencies
 ├── Dockerfile                # Container build definition
-└── .github/workflows/        # CI pipelines (Docker + route checks)
+├── docker-compose.yml        # Multi-container Docker setup
+└── .github/workflows/        # CI (Docker + route checks)
 ```
+
+## Environment Variables
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| `SECRET_KEY` | Flask secret key for sessions | `dev-secret-key-change-in-production` |
+| `DATABASE_URL` | Database connection string | `sqlite:///cart.db` |
+| `GOOGLE_CLIENT_ID` | Google OAuth client ID | - |
+| `GOOGLE_CLIENT_SECRET` | Google OAuth client secret | - |
 
 ## Running Locally
 
@@ -55,7 +75,54 @@ python client.py
 
 The script checks that all public routes respond with HTTP 200 and contain expected text fragments.
 
+## Testing
+
+### All Tests
+
+```bash
+docker-compose up -d
+pytest -v
+docker-compose down -v
+```
+
+#### Only Unit Tests
+
+```bash
+pytest tests/unit_test.py -v
+```
+
+Unit tests cover:
+- Input validation for cart API endpoints
+- Cart item CRUD operations
+- Error handling
+
+#### Only Integration Tests
+
+```bash
+docker-compose up -d
+pytest tests/integration_test.py -v
+docker-compose down -v
+```
+
 ## Docker
+
+### Docker Compose (Recommended)
+
+The project includes a `docker-compose.yml` with Flask app and PostgreSQL:
+
+```bash
+# Start all services
+docker-compose up -d
+
+# View logs
+docker-compose logs -f
+
+# Stop all services
+docker-compose down
+
+# Stop and remove volumes
+docker-compose down -v
+```
 
 ### Production Build
 
@@ -93,6 +160,32 @@ docker stop docker-store && docker rm docker-store
 
 When files (`.py`, `.html`, `.css`, etc.) change, Flask will automatically reload the application thanks to `FLASK_RUN_RELOAD=true` and code mounting.
 
+## Logging
+
+The application using files for structured logging:
+
+| Log File | Description |
+|----------|-------------|
+| `logs/app.log` | Application logs |
+| `logs/db.log` | SQLAlchemy database query logs |
+
+Logs are rotated at 10MB with 5 backup files retained.
+
+## Database Models
+
+### User
+- `id` - Primary key
+- `email` - User email (unique)
+- `name` - Display name
+- `google_id` - Google OAuth ID (unique)
+
+### CartItem
+- `id` - Primary key
+- `user_id` - Foreign key to User
+- `product_name` - Product name
+- `product_price` - Product price
+- `quantity` - Item quantity (default: 1)
+
 ## CI/CD
 
 Two GitHub Actions workflows (`.github/workflows/test.yml` and `test_docker.yml`) provide automated checks:
@@ -102,7 +195,3 @@ Two GitHub Actions workflows (`.github/workflows/test.yml` and `test_docker.yml`
 3. **Route validation** – executes `client.py` (and curl) against the running container to confirm every route is reachable from outside the container.
 
 The workflows trigger on pushes and pull requests targeting `main`. A passing status is required before deploying changes.
-
-## Future Improvements
-
-- Add persistence for the shopping cart and profile data
