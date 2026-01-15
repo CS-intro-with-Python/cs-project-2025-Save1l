@@ -5,7 +5,6 @@ db = SQLAlchemy()
 
 
 class User(UserMixin, db.Model):
-    """User model for OAuth authentication."""
     __tablename__ = 'users'
     
     id = db.Column(db.Integer, primary_key=True)
@@ -20,7 +19,6 @@ class User(UserMixin, db.Model):
 
 
 class CartItem(db.Model):
-    """Shopping cart item model."""
     __tablename__ = 'cart_items'
     
     id = db.Column(db.Integer, primary_key=True)
@@ -33,7 +31,6 @@ class CartItem(db.Model):
         return f'<CartItem {self.product_name} x{self.quantity}>'
     
     def to_dict(self):
-        """Convert cart item to dictionary for JSON response."""
         return {
             'id': self.id,
             'product_name': self.product_name,

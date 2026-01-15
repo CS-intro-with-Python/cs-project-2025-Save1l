@@ -12,7 +12,6 @@ login_manager = LoginManager()
 
 
 def init_oauth(app):
-    """Initialize OAuth and Login Manager with the Flask app."""
     oauth.init_app(app)
     login_manager.init_app(app)
     login_manager.login_view = 'auth.login'
@@ -30,20 +29,17 @@ def init_oauth(app):
 
 @login_manager.user_loader
 def load_user(user_id):
-    """Load user by ID for Flask-Login."""
     return User.query.get(int(user_id))
 
 
 @auth_bp.route('/login')
 def login():
-    """Redirect to Google OAuth login."""
     redirect_uri = url_for('auth.callback', _external=True)
     return oauth.google.authorize_redirect(redirect_uri)
 
 
 @auth_bp.route('/callback')
 def callback():
-    """Handle OAuth callback from Google."""
     try:
         token = oauth.google.authorize_access_token()
         user_info = token.get('userinfo')
@@ -74,7 +70,6 @@ def callback():
 
 @auth_bp.route('/logout')
 def logout():
-    """Log out the current user."""
     logout_user()
     session.clear()
     flash('You have been logged out.', 'info')

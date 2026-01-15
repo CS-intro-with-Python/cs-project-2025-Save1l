@@ -6646,3 +6646,643 @@ FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace
 WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
 [2026-01-15 17:50:20,811] INFO in base: [cached since 0.003406s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
 [2026-01-15 17:50:20,812] INFO in base: COMMIT
+[2026-01-15 17:54:59,992] INFO in base: select pg_catalog.version()
+[2026-01-15 17:54:59,992] INFO in base: [raw sql] {}
+[2026-01-15 17:54:59,993] INFO in base: select current_schema()
+[2026-01-15 17:54:59,993] INFO in base: [raw sql] {}
+[2026-01-15 17:54:59,994] INFO in base: show standard_conforming_strings
+[2026-01-15 17:54:59,994] INFO in base: [raw sql] {}
+[2026-01-15 17:54:59,995] INFO in base: BEGIN (implicit)
+[2026-01-15 17:54:59,999] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:00,000] INFO in base: [generated in 0.00031s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:00,003] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:00,003] INFO in base: [cached since 0.003409s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:00,004] INFO in base: COMMIT
+[2026-01-15 17:55:01,517] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:01,517] INFO in base: [raw sql] {}
+[2026-01-15 17:55:01,518] INFO in base: select current_schema()
+[2026-01-15 17:55:01,519] INFO in base: [raw sql] {}
+[2026-01-15 17:55:01,519] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:01,519] INFO in base: [raw sql] {}
+[2026-01-15 17:55:01,520] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:01,524] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:01,525] INFO in base: [generated in 0.00026s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:01,526] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:01,527] INFO in base: [cached since 0.002208s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:01,527] INFO in base: COMMIT
+[2026-01-15 17:55:03,089] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:03,089] INFO in base: [raw sql] {}
+[2026-01-15 17:55:03,090] INFO in base: select current_schema()
+[2026-01-15 17:55:03,090] INFO in base: [raw sql] {}
+[2026-01-15 17:55:03,091] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:03,091] INFO in base: [raw sql] {}
+[2026-01-15 17:55:03,091] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:03,094] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:03,094] INFO in base: [generated in 0.00017s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:03,095] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:03,095] INFO in base: [cached since 0.001818s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:03,096] INFO in base: COMMIT
+[2026-01-15 17:55:05,619] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:05,619] INFO in base: [raw sql] {}
+[2026-01-15 17:55:05,620] INFO in base: select current_schema()
+[2026-01-15 17:55:05,621] INFO in base: [raw sql] {}
+[2026-01-15 17:55:05,622] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:05,622] INFO in base: [raw sql] {}
+[2026-01-15 17:55:05,622] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:05,627] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:05,627] INFO in base: [generated in 0.00035s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:05,630] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:05,630] INFO in base: [cached since 0.003561s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:05,631] INFO in base: COMMIT
+[2026-01-15 17:55:07,250] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:07,250] INFO in base: [raw sql] {}
+[2026-01-15 17:55:07,251] INFO in base: select current_schema()
+[2026-01-15 17:55:07,251] INFO in base: [raw sql] {}
+[2026-01-15 17:55:07,252] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:07,252] INFO in base: [raw sql] {}
+[2026-01-15 17:55:07,253] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:07,257] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:07,257] INFO in base: [generated in 0.00027s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:07,260] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:07,260] INFO in base: [cached since 0.003127s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:07,261] INFO in base: COMMIT
+[2026-01-15 17:55:14,771] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:14,771] INFO in base: [raw sql] {}
+[2026-01-15 17:55:14,772] INFO in base: select current_schema()
+[2026-01-15 17:55:14,772] INFO in base: [raw sql] {}
+[2026-01-15 17:55:14,772] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:14,772] INFO in base: [raw sql] {}
+[2026-01-15 17:55:14,772] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:14,775] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:14,775] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:14,776] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:14,776] INFO in base: [cached since 0.001359s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:14,776] INFO in base: COMMIT
+[2026-01-15 17:55:17,253] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:17,253] INFO in base: [raw sql] {}
+[2026-01-15 17:55:17,254] INFO in base: select current_schema()
+[2026-01-15 17:55:17,254] INFO in base: [raw sql] {}
+[2026-01-15 17:55:17,255] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:17,255] INFO in base: [raw sql] {}
+[2026-01-15 17:55:17,256] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:17,259] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:17,259] INFO in base: [generated in 0.00020s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:17,261] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:17,261] INFO in base: [cached since 0.002352s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:17,262] INFO in base: COMMIT
+[2026-01-15 17:55:18,759] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:18,759] INFO in base: [raw sql] {}
+[2026-01-15 17:55:18,759] INFO in base: select current_schema()
+[2026-01-15 17:55:18,759] INFO in base: [raw sql] {}
+[2026-01-15 17:55:18,759] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:18,759] INFO in base: [raw sql] {}
+[2026-01-15 17:55:18,760] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:18,762] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:18,762] INFO in base: [generated in 0.00013s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:18,763] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:18,763] INFO in base: [cached since 0.001343s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:18,764] INFO in base: COMMIT
+[2026-01-15 17:55:32,300] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:32,300] INFO in base: [raw sql] {}
+[2026-01-15 17:55:32,302] INFO in base: select current_schema()
+[2026-01-15 17:55:32,303] INFO in base: [raw sql] {}
+[2026-01-15 17:55:32,304] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:32,304] INFO in base: [raw sql] {}
+[2026-01-15 17:55:32,305] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:32,309] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:32,310] INFO in base: [generated in 0.00030s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:32,311] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:32,311] INFO in base: [cached since 0.001991s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:32,312] INFO in base: COMMIT
+[2026-01-15 17:55:34,785] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:34,785] INFO in base: [raw sql] {}
+[2026-01-15 17:55:34,786] INFO in base: select current_schema()
+[2026-01-15 17:55:34,786] INFO in base: [raw sql] {}
+[2026-01-15 17:55:34,786] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:34,786] INFO in base: [raw sql] {}
+[2026-01-15 17:55:34,787] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:34,789] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:34,789] INFO in base: [generated in 0.00011s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:34,790] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:34,790] INFO in base: [cached since 0.001267s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:34,790] INFO in base: COMMIT
+[2026-01-15 17:55:36,317] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:36,317] INFO in base: [raw sql] {}
+[2026-01-15 17:55:36,318] INFO in base: select current_schema()
+[2026-01-15 17:55:36,318] INFO in base: [raw sql] {}
+[2026-01-15 17:55:36,318] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:36,318] INFO in base: [raw sql] {}
+[2026-01-15 17:55:36,318] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:36,321] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:36,321] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:36,322] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:36,322] INFO in base: [cached since 0.001358s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:36,323] INFO in base: COMMIT
+[2026-01-15 17:55:38,829] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:38,829] INFO in base: [raw sql] {}
+[2026-01-15 17:55:38,831] INFO in base: select current_schema()
+[2026-01-15 17:55:38,831] INFO in base: [raw sql] {}
+[2026-01-15 17:55:38,831] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:38,831] INFO in base: [raw sql] {}
+[2026-01-15 17:55:38,832] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:38,836] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:38,837] INFO in base: [generated in 0.00027s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:38,839] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:38,839] INFO in base: [cached since 0.003029s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:38,840] INFO in base: COMMIT
+[2026-01-15 17:55:40,408] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:40,409] INFO in base: [raw sql] {}
+[2026-01-15 17:55:40,409] INFO in base: select current_schema()
+[2026-01-15 17:55:40,409] INFO in base: [raw sql] {}
+[2026-01-15 17:55:40,409] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:40,409] INFO in base: [raw sql] {}
+[2026-01-15 17:55:40,410] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:40,412] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:40,412] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:40,413] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:40,413] INFO in base: [cached since 0.001345s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:40,414] INFO in base: COMMIT
+[2026-01-15 17:55:42,914] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:42,914] INFO in base: [raw sql] {}
+[2026-01-15 17:55:42,915] INFO in base: select current_schema()
+[2026-01-15 17:55:42,915] INFO in base: [raw sql] {}
+[2026-01-15 17:55:42,915] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:42,915] INFO in base: [raw sql] {}
+[2026-01-15 17:55:42,915] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:42,917] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:42,917] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:42,919] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:42,919] INFO in base: [cached since 0.001421s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:42,919] INFO in base: COMMIT
+[2026-01-15 17:55:56,406] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:56,406] INFO in base: [raw sql] {}
+[2026-01-15 17:55:56,407] INFO in base: select current_schema()
+[2026-01-15 17:55:56,407] INFO in base: [raw sql] {}
+[2026-01-15 17:55:56,408] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:56,408] INFO in base: [raw sql] {}
+[2026-01-15 17:55:56,408] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:56,411] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:56,411] INFO in base: [generated in 0.00014s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:56,412] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:56,412] INFO in base: [cached since 0.001583s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:56,413] INFO in base: COMMIT
+[2026-01-15 17:55:57,940] INFO in base: select pg_catalog.version()
+[2026-01-15 17:55:57,940] INFO in base: [raw sql] {}
+[2026-01-15 17:55:57,941] INFO in base: select current_schema()
+[2026-01-15 17:55:57,941] INFO in base: [raw sql] {}
+[2026-01-15 17:55:57,941] INFO in base: show standard_conforming_strings
+[2026-01-15 17:55:57,941] INFO in base: [raw sql] {}
+[2026-01-15 17:55:57,941] INFO in base: BEGIN (implicit)
+[2026-01-15 17:55:57,943] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:57,943] INFO in base: [generated in 0.00013s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:57,944] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:55:57,944] INFO in base: [cached since 0.001254s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:55:57,945] INFO in base: COMMIT
+[2026-01-15 17:56:00,415] INFO in base: select pg_catalog.version()
+[2026-01-15 17:56:00,415] INFO in base: [raw sql] {}
+[2026-01-15 17:56:00,415] INFO in base: select current_schema()
+[2026-01-15 17:56:00,415] INFO in base: [raw sql] {}
+[2026-01-15 17:56:00,416] INFO in base: show standard_conforming_strings
+[2026-01-15 17:56:00,416] INFO in base: [raw sql] {}
+[2026-01-15 17:56:00,416] INFO in base: BEGIN (implicit)
+[2026-01-15 17:56:00,418] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:00,418] INFO in base: [generated in 0.00013s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:00,419] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:00,419] INFO in base: [cached since 0.001302s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:00,420] INFO in base: COMMIT
+[2026-01-15 17:56:01,959] INFO in base: select pg_catalog.version()
+[2026-01-15 17:56:01,959] INFO in base: [raw sql] {}
+[2026-01-15 17:56:01,960] INFO in base: select current_schema()
+[2026-01-15 17:56:01,960] INFO in base: [raw sql] {}
+[2026-01-15 17:56:01,960] INFO in base: show standard_conforming_strings
+[2026-01-15 17:56:01,960] INFO in base: [raw sql] {}
+[2026-01-15 17:56:01,960] INFO in base: BEGIN (implicit)
+[2026-01-15 17:56:01,962] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:01,963] INFO in base: [generated in 0.00013s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:01,964] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:01,964] INFO in base: [cached since 0.001535s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:01,964] INFO in base: COMMIT
+[2026-01-15 17:56:04,428] INFO in base: select pg_catalog.version()
+[2026-01-15 17:56:04,429] INFO in base: [raw sql] {}
+[2026-01-15 17:56:04,430] INFO in base: select current_schema()
+[2026-01-15 17:56:04,430] INFO in base: [raw sql] {}
+[2026-01-15 17:56:04,430] INFO in base: show standard_conforming_strings
+[2026-01-15 17:56:04,431] INFO in base: [raw sql] {}
+[2026-01-15 17:56:04,431] INFO in base: BEGIN (implicit)
+[2026-01-15 17:56:04,436] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:04,436] INFO in base: [generated in 0.00027s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:04,438] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:04,439] INFO in base: [cached since 0.003135s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:04,439] INFO in base: COMMIT
+[2026-01-15 17:56:05,966] INFO in base: select pg_catalog.version()
+[2026-01-15 17:56:05,967] INFO in base: [raw sql] {}
+[2026-01-15 17:56:05,967] INFO in base: select current_schema()
+[2026-01-15 17:56:05,967] INFO in base: [raw sql] {}
+[2026-01-15 17:56:05,967] INFO in base: show standard_conforming_strings
+[2026-01-15 17:56:05,967] INFO in base: [raw sql] {}
+[2026-01-15 17:56:05,968] INFO in base: BEGIN (implicit)
+[2026-01-15 17:56:05,970] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:05,970] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:05,971] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:05,971] INFO in base: [cached since 0.001513s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:05,972] INFO in base: COMMIT
+[2026-01-15 17:56:18,471] INFO in base: select pg_catalog.version()
+[2026-01-15 17:56:18,471] INFO in base: [raw sql] {}
+[2026-01-15 17:56:18,472] INFO in base: select current_schema()
+[2026-01-15 17:56:18,472] INFO in base: [raw sql] {}
+[2026-01-15 17:56:18,473] INFO in base: show standard_conforming_strings
+[2026-01-15 17:56:18,473] INFO in base: [raw sql] {}
+[2026-01-15 17:56:18,474] INFO in base: BEGIN (implicit)
+[2026-01-15 17:56:18,478] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:18,478] INFO in base: [generated in 0.00027s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:18,481] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:18,481] INFO in base: [cached since 0.003067s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:18,482] INFO in base: COMMIT
+[2026-01-15 17:56:47,024] INFO in base: select pg_catalog.version()
+[2026-01-15 17:56:47,024] INFO in base: [raw sql] {}
+[2026-01-15 17:56:47,025] INFO in base: select current_schema()
+[2026-01-15 17:56:47,025] INFO in base: [raw sql] {}
+[2026-01-15 17:56:47,026] INFO in base: show standard_conforming_strings
+[2026-01-15 17:56:47,026] INFO in base: [raw sql] {}
+[2026-01-15 17:56:47,026] INFO in base: BEGIN (implicit)
+[2026-01-15 17:56:47,028] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:47,028] INFO in base: [generated in 0.00013s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:47,030] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:47,030] INFO in base: [cached since 0.001601s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:47,030] INFO in base: COMMIT
+[2026-01-15 17:56:49,482] INFO in base: select pg_catalog.version()
+[2026-01-15 17:56:49,483] INFO in base: [raw sql] {}
+[2026-01-15 17:56:49,483] INFO in base: select current_schema()
+[2026-01-15 17:56:49,483] INFO in base: [raw sql] {}
+[2026-01-15 17:56:49,483] INFO in base: show standard_conforming_strings
+[2026-01-15 17:56:49,483] INFO in base: [raw sql] {}
+[2026-01-15 17:56:49,483] INFO in base: BEGIN (implicit)
+[2026-01-15 17:56:49,485] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:49,485] INFO in base: [generated in 0.00011s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:49,486] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:49,486] INFO in base: [cached since 0.001142s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:49,487] INFO in base: COMMIT
+[2026-01-15 17:56:51,002] INFO in base: select pg_catalog.version()
+[2026-01-15 17:56:51,002] INFO in base: [raw sql] {}
+[2026-01-15 17:56:51,003] INFO in base: select current_schema()
+[2026-01-15 17:56:51,003] INFO in base: [raw sql] {}
+[2026-01-15 17:56:51,003] INFO in base: show standard_conforming_strings
+[2026-01-15 17:56:51,003] INFO in base: [raw sql] {}
+[2026-01-15 17:56:51,003] INFO in base: BEGIN (implicit)
+[2026-01-15 17:56:51,005] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:51,005] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:51,007] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:51,007] INFO in base: [cached since 0.001415s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:51,007] INFO in base: COMMIT
+[2026-01-15 17:56:53,484] INFO in base: select pg_catalog.version()
+[2026-01-15 17:56:53,485] INFO in base: [raw sql] {}
+[2026-01-15 17:56:53,485] INFO in base: select current_schema()
+[2026-01-15 17:56:53,485] INFO in base: [raw sql] {}
+[2026-01-15 17:56:53,485] INFO in base: show standard_conforming_strings
+[2026-01-15 17:56:53,485] INFO in base: [raw sql] {}
+[2026-01-15 17:56:53,486] INFO in base: BEGIN (implicit)
+[2026-01-15 17:56:53,488] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:53,488] INFO in base: [generated in 0.00011s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:53,489] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:56:53,489] INFO in base: [cached since 0.001542s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:56:53,489] INFO in base: COMMIT
+[2026-01-15 17:57:26,022] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:26,023] INFO in base: [raw sql] {}
+[2026-01-15 17:57:26,023] INFO in base: select current_schema()
+[2026-01-15 17:57:26,023] INFO in base: [raw sql] {}
+[2026-01-15 17:57:26,023] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:26,023] INFO in base: [raw sql] {}
+[2026-01-15 17:57:26,024] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:26,026] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:26,026] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:26,027] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:26,027] INFO in base: [cached since 0.001234s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:26,027] INFO in base: COMMIT
+[2026-01-15 17:57:28,489] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:28,489] INFO in base: [raw sql] {}
+[2026-01-15 17:57:28,490] INFO in base: select current_schema()
+[2026-01-15 17:57:28,490] INFO in base: [raw sql] {}
+[2026-01-15 17:57:28,491] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:28,492] INFO in base: [raw sql] {}
+[2026-01-15 17:57:28,492] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:28,496] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:28,496] INFO in base: [generated in 0.00022s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:28,498] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:28,498] INFO in base: [cached since 0.00181s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:28,498] INFO in base: COMMIT
+[2026-01-15 17:57:30,007] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:30,007] INFO in base: [raw sql] {}
+[2026-01-15 17:57:30,008] INFO in base: select current_schema()
+[2026-01-15 17:57:30,008] INFO in base: [raw sql] {}
+[2026-01-15 17:57:30,009] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:30,009] INFO in base: [raw sql] {}
+[2026-01-15 17:57:30,010] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:30,014] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:30,014] INFO in base: [generated in 0.00027s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:30,017] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:30,017] INFO in base: [cached since 0.003017s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:30,018] INFO in base: COMMIT
+[2026-01-15 17:57:32,494] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:32,494] INFO in base: [raw sql] {}
+[2026-01-15 17:57:32,495] INFO in base: select current_schema()
+[2026-01-15 17:57:32,495] INFO in base: [raw sql] {}
+[2026-01-15 17:57:32,495] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:32,495] INFO in base: [raw sql] {}
+[2026-01-15 17:57:32,496] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:32,498] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:32,498] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:32,499] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:32,499] INFO in base: [cached since 0.001526s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:32,500] INFO in base: COMMIT
+[2026-01-15 17:57:34,011] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:34,011] INFO in base: [raw sql] {}
+[2026-01-15 17:57:34,012] INFO in base: select current_schema()
+[2026-01-15 17:57:34,012] INFO in base: [raw sql] {}
+[2026-01-15 17:57:34,012] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:34,012] INFO in base: [raw sql] {}
+[2026-01-15 17:57:34,012] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:34,014] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:34,014] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:34,015] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:34,015] INFO in base: [cached since 0.001262s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:34,016] INFO in base: COMMIT
+[2026-01-15 17:57:36,528] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:36,528] INFO in base: [raw sql] {}
+[2026-01-15 17:57:36,529] INFO in base: select current_schema()
+[2026-01-15 17:57:36,529] INFO in base: [raw sql] {}
+[2026-01-15 17:57:36,530] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:36,530] INFO in base: [raw sql] {}
+[2026-01-15 17:57:36,531] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:36,535] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:36,535] INFO in base: [generated in 0.00025s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:36,538] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:36,538] INFO in base: [cached since 0.00298s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:36,539] INFO in base: COMMIT
+[2026-01-15 17:57:38,046] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:38,046] INFO in base: [raw sql] {}
+[2026-01-15 17:57:38,047] INFO in base: select current_schema()
+[2026-01-15 17:57:38,047] INFO in base: [raw sql] {}
+[2026-01-15 17:57:38,047] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:38,047] INFO in base: [raw sql] {}
+[2026-01-15 17:57:38,047] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:38,050] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:38,050] INFO in base: [generated in 0.00013s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:38,051] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:38,051] INFO in base: [cached since 0.001557s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:38,052] INFO in base: COMMIT
+[2026-01-15 17:57:40,508] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:40,508] INFO in base: [raw sql] {}
+[2026-01-15 17:57:40,509] INFO in base: select current_schema()
+[2026-01-15 17:57:40,509] INFO in base: [raw sql] {}
+[2026-01-15 17:57:40,510] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:40,510] INFO in base: [raw sql] {}
+[2026-01-15 17:57:40,511] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:40,515] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:40,515] INFO in base: [generated in 0.00027s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:40,518] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:40,518] INFO in base: [cached since 0.003104s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:40,519] INFO in base: COMMIT
+[2026-01-15 17:57:42,045] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:42,045] INFO in base: [raw sql] {}
+[2026-01-15 17:57:42,047] INFO in base: select current_schema()
+[2026-01-15 17:57:42,047] INFO in base: [raw sql] {}
+[2026-01-15 17:57:42,048] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:42,048] INFO in base: [raw sql] {}
+[2026-01-15 17:57:42,048] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:42,053] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:42,053] INFO in base: [generated in 0.00029s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:42,056] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:42,057] INFO in base: [cached since 0.003866s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:42,058] INFO in base: COMMIT
+[2026-01-15 17:57:44,538] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:44,539] INFO in base: [raw sql] {}
+[2026-01-15 17:57:44,540] INFO in base: select current_schema()
+[2026-01-15 17:57:44,540] INFO in base: [raw sql] {}
+[2026-01-15 17:57:44,540] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:44,541] INFO in base: [raw sql] {}
+[2026-01-15 17:57:44,541] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:44,545] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:44,546] INFO in base: [generated in 0.00026s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:44,548] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:44,548] INFO in base: [cached since 0.003045s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:44,549] INFO in base: COMMIT
+[2026-01-15 17:57:46,075] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:46,075] INFO in base: [raw sql] {}
+[2026-01-15 17:57:46,076] INFO in base: select current_schema()
+[2026-01-15 17:57:46,076] INFO in base: [raw sql] {}
+[2026-01-15 17:57:46,077] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:46,077] INFO in base: [raw sql] {}
+[2026-01-15 17:57:46,078] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:46,082] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:46,083] INFO in base: [generated in 0.00031s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:46,085] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:46,086] INFO in base: [cached since 0.003437s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:46,087] INFO in base: COMMIT
+[2026-01-15 17:57:48,602] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:48,603] INFO in base: [raw sql] {}
+[2026-01-15 17:57:48,604] INFO in base: select current_schema()
+[2026-01-15 17:57:48,604] INFO in base: [raw sql] {}
+[2026-01-15 17:57:48,605] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:48,605] INFO in base: [raw sql] {}
+[2026-01-15 17:57:48,605] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:48,610] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:48,610] INFO in base: [generated in 0.00026s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:48,613] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:48,613] INFO in base: [cached since 0.003133s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:48,614] INFO in base: COMMIT
+[2026-01-15 17:57:50,179] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:50,179] INFO in base: [raw sql] {}
+[2026-01-15 17:57:50,179] INFO in base: select current_schema()
+[2026-01-15 17:57:50,179] INFO in base: [raw sql] {}
+[2026-01-15 17:57:50,180] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:50,180] INFO in base: [raw sql] {}
+[2026-01-15 17:57:50,180] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:50,182] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:50,182] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:50,183] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:50,183] INFO in base: [cached since 0.001419s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:50,184] INFO in base: COMMIT
+[2026-01-15 17:57:52,688] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:52,688] INFO in base: [raw sql] {}
+[2026-01-15 17:57:52,688] INFO in base: select current_schema()
+[2026-01-15 17:57:52,688] INFO in base: [raw sql] {}
+[2026-01-15 17:57:52,689] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:52,689] INFO in base: [raw sql] {}
+[2026-01-15 17:57:52,689] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:52,691] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:52,691] INFO in base: [generated in 0.00012s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:52,692] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:52,692] INFO in base: [cached since 0.001319s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:52,693] INFO in base: COMMIT
+[2026-01-15 17:57:54,194] INFO in base: select pg_catalog.version()
+[2026-01-15 17:57:54,194] INFO in base: [raw sql] {}
+[2026-01-15 17:57:54,195] INFO in base: select current_schema()
+[2026-01-15 17:57:54,195] INFO in base: [raw sql] {}
+[2026-01-15 17:57:54,195] INFO in base: show standard_conforming_strings
+[2026-01-15 17:57:54,195] INFO in base: [raw sql] {}
+[2026-01-15 17:57:54,196] INFO in base: BEGIN (implicit)
+[2026-01-15 17:57:54,198] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:54,198] INFO in base: [generated in 0.00013s] {'table_name': 'users', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:54,200] INFO in base: SELECT pg_catalog.pg_class.relname 
+FROM pg_catalog.pg_class JOIN pg_catalog.pg_namespace ON pg_catalog.pg_namespace.oid = pg_catalog.pg_class.relnamespace 
+WHERE pg_catalog.pg_class.relname = %(table_name)s AND pg_catalog.pg_class.relkind = ANY (ARRAY[%(param_1)s, %(param_2)s, %(param_3)s, %(param_4)s, %(param_5)s]) AND pg_catalog.pg_table_is_visible(pg_catalog.pg_class.oid) AND pg_catalog.pg_namespace.nspname != %(nspname_1)s
+[2026-01-15 17:57:54,200] INFO in base: [cached since 0.001402s ago] {'table_name': 'cart_items', 'param_1': 'r', 'param_2': 'p', 'param_3': 'f', 'param_4': 'v', 'param_5': 'm', 'nspname_1': 'pg_catalog'}
+[2026-01-15 17:57:54,200] INFO in base: COMMIT

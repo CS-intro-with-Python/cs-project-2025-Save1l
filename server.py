@@ -13,18 +13,15 @@ app = Flask(
     static_url_path="/source",
 )
 
-# Configuration
 app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///cart.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 app.config['SQLALCHEMY_ECHO'] = True
 
-# Initialize extensions
 db.init_app(app)
 init_oauth(app)
 app.register_blueprint(auth_bp)
 
-# Initialize Swagger API
 api = Api(
     app,
     version='1.0',
@@ -34,11 +31,9 @@ api = Api(
     prefix='/api'
 )
 
-# Create namespace for cart operations
 cart_ns = Namespace('cart', description='Операции с корзиной покупок')
 api.add_namespace(cart_ns)
 
-# Define models for Swagger documentation
 cart_item_model = api.model('CartItem', {
     'id': fields.Integer(readonly=True, description='ID товара в корзине'),
     'product_name': fields.String(required=True, description='Название товара'),
@@ -76,7 +71,6 @@ health_model = api.model('Health', {
 
 setup_logger(app)
 
-# Create tables
 with app.app_context():
     db.create_all()
 
@@ -112,10 +106,6 @@ def pricing():
     return render_template("pricing.html", active_page="pricing")
 
 
-# =============================================================================
-# Cart API with Swagger Documentation
-# =============================================================================
-
 @cart_ns.route('/')
 class CartList(Resource):
     @cart_ns.doc('get_cart', security='apikey')
@@ -123,7 +113,6 @@ class CartList(Resource):
     @cart_ns.response(401, 'Unauthorized')
     @login_required
     def get(self):
-        """Получить все товары в корзине текущего пользователя"""
         cart_items = CartItem.query.filter_by(user_id=current_user.id).all()
         total = sum(item.product_price * item.quantity for item in cart_items)
         return {
@@ -141,7 +130,6 @@ class CartAdd(Resource):
     @cart_ns.response(401, 'Unauthorized')
     @login_required
     def post(self):
-        """Добавить товар в корзину"""
         data = request.get_json()
         
         if not data or 'product_name' not in data or 'product_price' not in data:
@@ -152,7 +140,6 @@ class CartAdd(Resource):
         except (ValueError, TypeError):
             cart_ns.abort(400, 'Invalid product_price')
         
-        # Check if item already exists for this user
         existing_item = CartItem.query.filter_by(
             user_id=current_user.id,
             product_name=data['product_name']
@@ -188,7 +175,6 @@ class CartUpdate(Resource):
     @cart_ns.response(404, 'Item not found', error_model)
     @login_required
     def put(self, item_id):
-        """Обновить количество товара в корзине"""
         data = request.get_json()
         
         if not data or 'quantity' not in data:
@@ -221,7 +207,6 @@ class CartRemove(Resource):
     @cart_ns.response(404, 'Item not found', error_model)
     @login_required
     def delete(self, item_id):
-        """Удалить товар из корзины"""
         item = CartItem.query.filter_by(id=item_id, user_id=current_user.id).first()
         if not item:
             cart_ns.abort(404, 'Item not found')
@@ -234,15 +219,9 @@ class CartRemove(Resource):
         return {'message': f'{product_name} removed from cart'}, 200
 
 
-# =============================================================================
-# Health Check Endpoint
-# =============================================================================
-
 @app.route('/health')
 def health_check():
-    """Health check endpoint for Docker/Kubernetes."""
     try:
-        # Проверяем подключение к базе данных
         db.session.execute(db.text('SELECT 1'))
         db_status = 'healthy'
     except Exception as e:
