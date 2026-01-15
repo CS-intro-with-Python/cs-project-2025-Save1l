@@ -1,20 +1,105 @@
-[2026-01-09 16:19:31,033] INFO in logger: Logger initialized
-[2026-01-09 16:19:31,206] INFO in logger: Logger initialized
-[2026-01-09 16:20:08,229] INFO in server: Request: GET / from 127.0.0.1
-[2026-01-09 16:20:08,282] INFO in server: Request: GET /source/styles/mycss.css from 127.0.0.1
-[2026-01-09 16:20:08,283] INFO in server: Request: GET /source/styles/bgvideo.css from 127.0.0.1
-[2026-01-09 16:20:08,294] INFO in server: Request: GET /source/files/bgvideo.mp4 from 127.0.0.1
-[2026-01-09 16:20:08,298] INFO in server: Request: GET /source/images/gaming pc.png from 127.0.0.1
-[2026-01-09 16:20:08,298] INFO in server: Request: GET /source/images/gpu.png from 127.0.0.1
-[2026-01-09 16:20:08,302] INFO in server: Request: GET /source/images/laptop.png from 127.0.0.1
-[2026-01-09 16:20:08,303] INFO in server: Request: GET /source/images/other.png from 127.0.0.1
-[2026-01-09 16:20:08,308] INFO in server: Request: GET /source/images/vr.png from 127.0.0.1
-[2026-01-09 16:20:08,309] INFO in server: Request: GET /source/files/phone.png from 127.0.0.1
-[2026-01-09 16:20:08,311] INFO in server: Request: GET /source/files/tg.png from 127.0.0.1
-[2026-01-09 16:20:08,316] INFO in server: Request: GET /source/files/yt.png from 127.0.0.1
-[2026-01-09 16:20:08,318] INFO in server: Request: GET /source/files/logo.jpg from 127.0.0.1
-[2026-01-09 16:20:08,322] INFO in server: Request: GET /source/images/controller.png from 127.0.0.1
-[2026-01-09 16:20:08,323] INFO in server: Request: GET /source/images/cpu.png from 127.0.0.1
-[2026-01-09 16:20:08,326] INFO in server: Request: GET /source/images/acc.png from 127.0.0.1
-[2026-01-09 16:22:16,837] INFO in logger: Logger initialized
-[2026-01-09 16:22:17,094] INFO in logger: Logger initialized
+[2026-01-15 11:08:45,562] INFO in logger: Logger initialized
+[2026-01-15 11:08:46,185] INFO in logger: Logger initialized
+[2026-01-15 11:09:06,869] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 11:09:06,957] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 11:09:06,959] INFO in server: Request: GET /source/styles/bgvideo.css from 172.19.0.1
+[2026-01-15 11:09:06,963] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
+[2026-01-15 11:09:06,965] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 11:09:06,966] INFO in server: Request: GET /source/images/cpu.png from 172.19.0.1
+[2026-01-15 11:09:06,969] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 11:09:06,973] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 11:09:06,976] INFO in server: Request: GET /source/images/controller.png from 172.19.0.1
+[2026-01-15 11:09:06,977] INFO in server: Request: GET /source/files/bgvideo.mp4 from 172.19.0.1
+[2026-01-15 11:09:06,979] INFO in server: Request: GET /source/images/acc.png from 172.19.0.1
+[2026-01-15 11:09:06,980] INFO in server: Request: GET /source/images/gaming pc.png from 172.19.0.1
+[2026-01-15 11:09:06,986] INFO in server: Request: GET /source/images/gpu.png from 172.19.0.1
+[2026-01-15 11:09:06,987] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
+[2026-01-15 11:09:06,989] INFO in server: Request: GET /source/images/laptop.png from 172.19.0.1
+[2026-01-15 11:09:06,992] INFO in server: Request: GET /source/images/other.png from 172.19.0.1
+[2026-01-15 11:09:08,323] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 11:09:08,381] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 11:09:08,385] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 11:09:08,386] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 11:09:08,388] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 11:09:08,391] INFO in server: Request: GET /source/images/laptop.png from 172.19.0.1
+[2026-01-15 11:09:08,391] INFO in server: Request: GET /source/images/gaming pc.png from 172.19.0.1
+[2026-01-15 11:09:08,396] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
+[2026-01-15 11:09:08,398] INFO in server: Request: GET /source/images/acc.png from 172.19.0.1
+[2026-01-15 11:09:08,401] INFO in server: Request: GET /source/images/controller.png from 172.19.0.1
+[2026-01-15 11:09:08,403] INFO in server: Request: GET /source/images/gpu.png from 172.19.0.1
+[2026-01-15 11:09:08,406] INFO in server: Request: GET /source/images/other.png from 172.19.0.1
+[2026-01-15 11:09:08,407] INFO in server: Request: GET /source/images/cpu.png from 172.19.0.1
+[2026-01-15 11:09:08,410] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
+[2026-01-15 11:09:09,258] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 11:09:09,317] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 11:09:09,320] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 11:09:09,323] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 11:09:09,323] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 11:09:09,327] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 11:09:11,637] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 11:09:11,687] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 11:09:11,696] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 11:09:11,700] INFO in server: Request: GET /source/images/gaming pc.png from 172.19.0.1
+[2026-01-15 11:09:11,701] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 11:09:11,703] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 11:09:11,707] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
+[2026-01-15 11:09:11,708] INFO in server: Request: GET /source/images/laptop.png from 172.19.0.1
+[2026-01-15 11:09:11,712] INFO in server: Request: GET /source/images/acc.png from 172.19.0.1
+[2026-01-15 11:09:11,716] INFO in server: Request: GET /source/images/cpu.png from 172.19.0.1
+[2026-01-15 11:09:11,713] INFO in server: Request: GET /source/images/controller.png from 172.19.0.1
+[2026-01-15 11:09:11,717] INFO in server: Request: GET /source/images/gpu.png from 172.19.0.1
+[2026-01-15 11:09:11,721] INFO in server: Request: GET /source/images/other.png from 172.19.0.1
+[2026-01-15 11:09:11,725] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
+[2026-01-15 11:09:12,692] INFO in server: Request: POST /api/cart/add from 172.19.0.1
+[2026-01-15 11:09:12,703] INFO in server: Request: GET /auth/login from 172.19.0.1
+[2026-01-15 11:09:14,726] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 11:09:14,777] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 11:09:14,780] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 11:09:14,781] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 11:09:14,784] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 11:09:14,786] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 12:11:18,427] INFO in logger: Logger initialized
+[2026-01-15 12:11:19,056] INFO in logger: Logger initialized
+[2026-01-15 12:16:20,938] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 12:16:21,011] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 12:16:21,021] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 12:16:21,023] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 12:16:21,024] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 12:16:21,028] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 12:16:22,559] INFO in server: Request: GET /pricing from 172.19.0.1
+[2026-01-15 12:16:22,611] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 12:16:22,615] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 12:16:22,617] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 12:16:22,616] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 12:16:22,619] INFO in server: Request: GET /source/images/laptop.png from 172.19.0.1
+[2026-01-15 12:16:22,624] INFO in server: Request: GET /source/images/gaming pc.png from 172.19.0.1
+[2026-01-15 12:16:22,627] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
+[2026-01-15 12:16:22,630] INFO in server: Request: GET /source/images/acc.png from 172.19.0.1
+[2026-01-15 12:16:22,631] INFO in server: Request: GET /source/images/controller.png from 172.19.0.1
+[2026-01-15 12:16:22,635] INFO in server: Request: GET /source/images/cpu.png from 172.19.0.1
+[2026-01-15 12:16:22,637] INFO in server: Request: GET /source/images/gpu.png from 172.19.0.1
+[2026-01-15 12:16:22,641] INFO in server: Request: GET /source/images/other.png from 172.19.0.1
+[2026-01-15 12:16:22,642] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
+[2026-01-15 12:16:23,680] INFO in server: Request: GET /home from 172.19.0.1
+[2026-01-15 12:16:23,724] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 12:16:23,728] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 12:16:23,731] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 12:16:23,736] INFO in server: Request: GET /source/files/test_logo.png from 172.19.0.1
+[2026-01-15 12:16:23,736] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 12:16:24,457] INFO in server: Request: GET /auth/login from 172.19.0.1
+[2026-01-15 12:16:28,090] INFO in server: Request: GET / from 172.19.0.1
+[2026-01-15 12:16:28,143] INFO in server: Request: GET /source/styles/mycss.css from 172.19.0.1
+[2026-01-15 12:16:28,147] INFO in server: Request: GET /source/styles/bgvideo.css from 172.19.0.1
+[2026-01-15 12:16:28,153] INFO in server: Request: GET /source/files/logo.jpg from 172.19.0.1
+[2026-01-15 12:16:28,154] INFO in server: Request: GET /source/files/tg.png from 172.19.0.1
+[2026-01-15 12:16:28,156] INFO in server: Request: GET /source/images/controller.png from 172.19.0.1
+[2026-01-15 12:16:28,158] INFO in server: Request: GET /source/files/yt.png from 172.19.0.1
+[2026-01-15 12:16:28,161] INFO in server: Request: GET /source/images/acc.png from 172.19.0.1
+[2026-01-15 12:16:28,163] INFO in server: Request: GET /source/images/cpu.png from 172.19.0.1
+[2026-01-15 12:16:28,167] INFO in server: Request: GET /source/images/gpu.png from 172.19.0.1
+[2026-01-15 12:16:28,168] INFO in server: Request: GET /source/images/gaming pc.png from 172.19.0.1
+[2026-01-15 12:16:28,169] INFO in server: Request: GET /source/images/laptop.png from 172.19.0.1
+[2026-01-15 12:16:28,170] INFO in server: Request: GET /source/images/other.png from 172.19.0.1
+[2026-01-15 12:16:28,182] INFO in server: Request: GET /source/images/vr.png from 172.19.0.1
+[2026-01-15 12:16:28,193] INFO in server: Request: GET /source/files/phone.png from 172.19.0.1
+[2026-01-15 12:16:28,206] INFO in server: Request: GET /source/files/bgvideo.mp4 from 172.19.0.1

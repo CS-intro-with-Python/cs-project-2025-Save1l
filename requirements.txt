@@ -1,2 +1,7 @@
 flask
 requests
+flask-sqlalchemy
+psycopg2-binary
+flask-login
+authlib
+pytest

@@ -23,7 +23,10 @@
                                             the bulk
                                             of the card's content.
                                         </a></p>
-                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <p class="text-warning fw-bold">$1,200.00</p>
+                                    <button class="btn btn-primary buy-btn" 
+                                            data-product-name="Laptops" 
+                                            data-product-price="1200.00">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -35,7 +38,10 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <p class="text-warning fw-bold">$1,500.00</p>
+                                    <button class="btn btn-primary buy-btn" 
+                                            data-product-name="Gaming PC" 
+                                            data-product-price="1500.00">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -47,7 +53,10 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <p class="text-warning fw-bold">$800.00</p>
+                                    <button class="btn btn-primary buy-btn" 
+                                            data-product-name="VR" 
+                                            data-product-price="800.00">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -55,11 +64,14 @@
                             <div class="card">
                                 <img src="{{ url_for('static', filename='images/acc.png') }}" class="card-img-top" alt="Accessories">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="#">Acc</a></h5>
+                                    <h5 class="card-title"><a href="#">Accessories</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <p class="text-warning fw-bold">$150.00</p>
+                                    <button class="btn btn-primary buy-btn" 
+                                            data-product-name="Accessories" 
+                                            data-product-price="150.00">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -71,7 +83,10 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <p class="text-warning fw-bold">$60.00</p>
+                                    <button class="btn btn-primary buy-btn" 
+                                            data-product-name="Controller" 
+                                            data-product-price="60.00">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -79,11 +94,14 @@
                             <div class="card">
                                 <img src="{{ url_for('static', filename='images/cpu.png') }}" class="card-img-top" alt="CPU">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="#">Cpu</a></h5>
+                                    <h5 class="card-title"><a href="#">CPU</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <p class="text-warning fw-bold">$450.00</p>
+                                    <button class="btn btn-primary buy-btn" 
+                                            data-product-name="CPU" 
+                                            data-product-price="450.00">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -91,11 +109,14 @@
                             <div class="card">
                                 <img src="{{ url_for('static', filename='images/gpu.png') }}" class="card-img-top" alt="GPU">
                                 <div class="card-body">
-                                    <h5 class="card-title"><a href="#">Gpu</a></h5>
+                                    <h5 class="card-title"><a href="#">GPU</a></h5>
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <p class="text-warning fw-bold">$700.00</p>
+                                    <button class="btn btn-primary buy-btn" 
+                                            data-product-name="GPU" 
+                                            data-product-price="700.00">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -107,7 +128,10 @@
                                     <p class="card-text">Some quick example text to build on the card title and make up
                                         the bulk
                                         of the card's content.</p>
-                                    <a href="#" class="btn btn-primary">Buy</a>
+                                    <p class="text-warning fw-bold">$100.00</p>
+                                    <button class="btn btn-primary buy-btn" 
+                                            data-product-name="Other" 
+                                            data-product-price="100.00">Buy</button>
                                 </div>
                             </div>
                         </div>
@@ -152,5 +176,66 @@
         </div>
 
     </section>
+    
+    <!-- Toast notification for cart -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="cartToast" class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="d-flex">
+                <div class="toast-body" id="toastMessage">
+                    Item added to cart!
+                </div>
+                <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const buyButtons = document.querySelectorAll('.buy-btn');
+        const toastEl = document.getElementById('cartToast');
+        const toastMessage = document.getElementById('toastMessage');
+        const toast = new bootstrap.Toast(toastEl);
+        
+        buyButtons.forEach(function(btn) {
+            btn.addEventListener('click', function() {
+                const productName = this.getAttribute('data-product-name');
+                const productPrice = parseFloat(this.getAttribute('data-product-price'));
+                
+                fetch('/api/cart/add', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        product_name: productName,
+                        product_price: productPrice
+                    })
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if (data.error) {
+                        toastMessage.textContent = 'Error: ' + data.error;
+                        toastEl.classList.remove('bg-success');
+                        toastEl.classList.add('bg-danger');
+                    } else {
+                        toastMessage.textContent = productName + ' added to cart!';
+                        toastEl.classList.remove('bg-danger');
+                        toastEl.classList.add('bg-success');
+                    }
+                    toast.show();
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    toastMessage.textContent = 'Failed to add item to cart';
+                    toastEl.classList.remove('bg-success');
+                    toastEl.classList.add('bg-danger');
+                    toast.show();
+                });
+            });
+        });
+    });
+</script>
 {% endblock %}
 

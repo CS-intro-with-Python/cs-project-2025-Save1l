@@ -5,199 +5,188 @@
 {% block body_class %}bg-dark text-light{% endblock %}
 
 {% block content %}
-  <main class="py-5">
-    <div class="container">
-      <div class="row g-4">
-        <div class="col-12">
-          <div class="card bg-secondary border-0 shadow-lg">
-            <div class="card-body d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between gap-4">
-              <div class="d-flex align-items-center gap-3">
-                <div class="rounded-circle overflow-hidden" style="width: 96px; height: 96px;">
-                  <img src="/source/files/test_logo.png" class="img-fluid" alt="User avatar">
-                </div>
-                <div>
-                  <h2 class="mb-1 text-info">Savel Karatel</h2>
-                  <p class="mb-0 text-light-50">ID: 1059&nbsp;&nbsp;|&nbsp;&nbsp;Country: Cyprus</p>
-                </div>
+<main class="py-5">
+  <div class="container">
+    <div class="row g-4">
+      <div class="col-12">
+        <div class="card bg-secondary border-0 shadow-lg">
+          <div class="card-body d-flex flex-column flex-lg-row align-items-lg-center justify-content-lg-between gap-4">
+            <div class="d-flex align-items-center gap-3">
+              <div class="rounded-circle overflow-hidden" style="width: 96px; height: 96px;">
+                <img src="/source/files/test_logo.png" class="img-fluid" alt="User avatar">
               </div>
-              <div class="text-lg-end">
-                <p class="mb-2 fs-4 fw-semibold">Store Balance: <span class="text-warning">$1,500.30</span></p>
-                <div class="btn-group" role="group" aria-label="Account actions">
-                  <a href="#" class="btn btn-outline-light">Log out</a>
-                  <a href="#" class="btn btn-outline-danger">Delete account</a>
-                </div>
+              <div>
+                {% if current_user.is_authenticated %}
+                <h2 class="mb-1 text-info">{{ current_user.name }}</h2>
+                <p class="mb-0 text-light-50">{{ current_user.email }}</p>
+                {% else %}
+                <h2 class="mb-1 text-info">Guest User</h2>
+                <p class="mb-0 text-light-50">Please login to save your cart</p>
+                {% endif %}
               </div>
             </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="card bg-secondary border-0 shadow-lg mb-4">
-            <div class="card-header bg-secondary border-0">
-              <h4 class="mb-0">Account Settings</h4>
-            </div>
-            <div class="card-body">
-              <form class="vstack gap-3">
-                <div>
-                  <label for="settingsEmail" class="form-label" style="color: #78f3f0;">Email</label>
-                  <input type="email" class="form-control bg-dark text-light border-0" id="settingsEmail"
-                    value="example@domain.com">
-                </div>
-                <div>
-                  <label for="settingsPassword" class="form-label" style="color: #78f3f0;">Password</label>
-                  <div class="input-group">
-                    <input type="password" class="form-control bg-dark text-light border-0" id="settingsPassword"
-                      value="Pa$$w0rd">
-                    <button class="btn btn-outline-light" type="button" id="togglePassword"
-                      aria-label="Toggle password visibility">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-eye" viewBox="0 0 16 16">
-                        <path
-                          d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zm-8 4.5A4.5 4.5 0 1 1 12.5 8 4.5 4.5 0 0 1 8 12.5zm0-1.5A3 3 0 1 0 5 8a3 3 0 0 0 3 3z" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <button type="button" class="btn btn-primary" id="saveSettings">Save changes</button>
-              </form>
-              <div class="alert alert-success mt-3 d-none" role="alert" id="settingsAlert">
-                Changes saved successfully.
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-8">
-          <div class="card bg-secondary border-0 shadow-lg mb-4">
-            <div class="card-header bg-secondary border-0 d-flex justify-content-between align-items-center">
-              <h4 class="mb-0">Shopping Cart</h4>
-              <span class="fw-semibold">Total: <span id="cartTotal" class="text-warning">$3,602.30</span></span>
-            </div>
-            <div class="card-body p-0">
-              <div class="table-responsive">
-                <table class="table table-dark table-hover mb-0 align-middle" id="shoppingCartTable">
-                  <thead>
-                    <tr class="text-uppercase text-secondary">
-                      <th scope="col">Qty</th>
-                      <th scope="col">Name</th>
-                      <th scope="col">Country</th>
-                      <th scope="col">Id</th>
-                      <th scope="col">Price</th>
-                      <th scope="col" class="text-end">Action</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><input type="number" min="1" value="1" class="form-control bg-dark text-light border-0"></td>
-                      <td>Example PC Deluxe</td>
-                      <td>Estonia</td>
-                      <td>1059</td>
-                      <td>$1,500.30</td>
-                      <td class="text-end"><button class="btn btn-sm btn-outline-danger cart-remove">Remove</button></td>
-                    </tr>
-                    <tr>
-                      <td><input type="number" min="1" value="1" class="form-control bg-dark text-light border-0"></td>
-                      <td>Example VR Kit</td>
-                      <td>Estonia</td>
-                      <td>1051</td>
-                      <td>$1,020.00</td>
-                      <td class="text-end"><button class="btn btn-sm btn-outline-danger cart-remove">Remove</button></td>
-                    </tr>
-                    <tr>
-                      <td><input type="number" min="1" value="1" class="form-control bg-dark text-light border-0"></td>
-                      <td>Example GPU Bundle</td>
-                      <td>Estonia</td>
-                      <td>813</td>
-                      <td>$902.00</td>
-                      <td class="text-end"><button class="btn btn-sm btn-outline-danger cart-remove">Remove</button></td>
-                    </tr>
-                    <tr>
-                      <td><input type="number" min="1" value="1" class="form-control bg-dark text-light border-0"></td>
-                      <td>Example Accessories</td>
-                      <td>Estonia</td>
-                      <td>518</td>
-                      <td>$180.00</td>
-                      <td class="text-end"><button class="btn btn-sm btn-outline-danger cart-remove">Remove</button></td>
-                    </tr>
-                  </tbody>
-                </table>
+            <div class="text-lg-end">
+              <p class="mb-2 fs-4 fw-semibold">Store Balance: <span class="text-warning">$1,500.30</span></p>
+              <div class="btn-group" role="group" aria-label="Account actions">
+                {% if current_user.is_authenticated %}
+                <a href="{{ url_for('auth.logout') }}" class="btn btn-outline-light">Log out</a>
+                {% else %}
+                <a href="{{ url_for('auth.login') }}" class="btn btn-outline-info">Login with Google</a>
+                {% endif %}
               </div>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="col-12">
+        <div class="card bg-secondary border-0 shadow-lg mb-4">
+          <div class="card-header bg-secondary border-0 d-flex justify-content-between align-items-center">
+            <h4 class="mb-0">Shopping Cart</h4>
+            <span class="fw-semibold">Total: <span id="cartTotal" class="text-warning">${{ "%.2f"|format(cart_total)
+                }}</span></span>
+          </div>
+          <div class="card-body p-0">
+            <div class="table-responsive">
+              <table class="table table-dark table-hover mb-0 align-middle" id="shoppingCartTable">
+                <thead>
+                  <tr class="text-uppercase text-secondary">
+                    <th scope="col">Qty</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">Subtotal</th>
+                    <th scope="col" class="text-end">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% if cart_items %}
+                  {% for item in cart_items %}
+                  <tr data-item-id="{{ item.id }}">
+                    <td>
+                      <input type="number" min="1" value="{{ item.quantity }}"
+                        class="form-control bg-dark text-light border-0 qty-input" style="width: 80px;"
+                        data-item-id="{{ item.id }}">
+                    </td>
+                    <td>{{ item.product_name }}</td>
+                    <td data-price="{{ item.product_price }}">${{ "%.2f"|format(item.product_price) }}</td>
+                    <td class="subtotal">${{ "%.2f"|format(item.product_price * item.quantity) }}</td>
+                    <td class="text-end">
+                      <button class="btn btn-sm btn-outline-danger cart-remove"
+                        data-item-id="{{ item.id }}">Remove</button>
+                    </td>
+                  </tr>
+                  {% endfor %}
+                  {% else %}
+                  <tr id="emptyCartRow">
+                    <td colspan="5" class="text-center text-muted py-4">Your cart is empty. <a
+                        href="{{ url_for('pricing') }}" class="text-info">Browse products</a></td>
+                  </tr>
+                  {% endif %}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-  </main>
+  </div>
+</main>
 {% endblock %}
 
 {% block extra_js %}
-  <script>
-    const passwordInput = document.getElementById("settingsPassword");
-    const toggleBtn = document.getElementById("togglePassword");
-    if (passwordInput && toggleBtn) {
-      toggleBtn.addEventListener("click", () => {
-        const type = passwordInput.getAttribute("type") === "password" ? "text" : "password";
-        passwordInput.setAttribute("type", type);
-        toggleBtn.innerHTML = type === "password"
-          ? `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
-              <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zm-8 4.5A4.5 4.5 0 1 1 12.5 8 4.5 4.5 0 0 1 8 12.5zm0-1.5A3 3 0 1 0 5 8a3 3 0 0 0 3 3z" />
-            </svg>`
-          : `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye-slash" viewBox="0 0 16 16">
-              <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7 7 0 0 0-2.757.559l.794.795A5.94 5.94 0 0 1 8 3.5c2.904 0 5.223 2.22 6.473 3.885-.42.547-1.162 1.42-2.235 2.275l.879.879z" />
-              <path d="M11.297 9.176a3 3 0 0 0-4.473-4.473l.823.823a2 2 0 0 1 2.827 2.827l.823.823z" />
-              <path d="M3.35 5.47C2.236 6.329 1.467 7.26 1.052 7.8a.71.71 0 0 0 0 .8c.32.411 1.079 1.262 2.16 2.11 1.081.848 2.469 1.79 4.788 1.79a7 7 0 0 0 2.722-.541l.806.806A7.13 7.13 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.72 2.641-3.238l.708.708z" />
-              <path d="M5.354 7.146A2 2 0 0 0 8.854 10.646l.708.708a3 3 0 0 1-4.242-4.242l-.708-.708z" />
-            </svg>`;
-      });
-    }
+<script>
+  const cartTable = document.getElementById("shoppingCartTable");
+  const totalSpan = document.getElementById("cartTotal");
 
-    const qtyInputs = document.querySelectorAll(".table input[type='number']");
-    const removeButtons = document.querySelectorAll(".cart-remove");
-    const totalSpan = document.getElementById("cartTotal");
+  const recalcTotal = () => {
+    let total = 0;
+    document.querySelectorAll("#shoppingCartTable tbody tr:not(#emptyCartRow)").forEach((row) => {
+      const qtyInput = row.querySelector(".qty-input");
+      const priceCell = row.querySelector("td[data-price]");
+      if (qtyInput && priceCell) {
+        const qty = parseInt(qtyInput.value, 10) || 0;
+        const price = parseFloat(priceCell.getAttribute("data-price")) || 0;
+        const subtotal = qty * price;
+        total += subtotal;
 
-    const recalcTotal = () => {
-      let total = 0;
-      document.querySelectorAll("#shoppingCartTable tbody tr").forEach((row) => {
-        const qtyInput = row.querySelector("input[type='number']");
-        const priceCell = row.querySelector("td:nth-child(5)");
-        if (qtyInput && priceCell) {
-          const qty = parseInt(qtyInput.value, 10) || 0;
-          const price = parseFloat(priceCell.textContent.replace(/[^0-9.]/g, "")) || 0;
-          total += qty * price;
+        const subtotalCell = row.querySelector(".subtotal");
+        if (subtotalCell) {
+          subtotalCell.textContent = `$${subtotal.toFixed(2)}`;
         }
-      });
-      if (totalSpan) {
-        totalSpan.textContent = `$${total.toLocaleString(undefined, { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
       }
-    };
+    });
+    if (totalSpan) {
+      totalSpan.textContent = `$${total.toFixed(2)}`;
+    }
+  };
 
-    const cartTable = document.getElementById("shoppingCartTable");
-    if (cartTable) {
-      qtyInputs.forEach((input) => input.addEventListener("input", recalcTotal));
-      removeButtons.forEach((btn) =>
-        btn.addEventListener("click", () => {
-          const row = btn.closest("tr");
-          if (row) {
+  // Update quantity
+  document.querySelectorAll(".qty-input").forEach((input) => {
+    input.addEventListener("change", function () {
+      const itemId = this.getAttribute("data-item-id");
+      const quantity = parseInt(this.value, 10);
+
+      if (quantity < 1) {
+        this.value = 1;
+        return;
+      }
+
+      fetch(`/api/cart/update/${itemId}`, {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ quantity: quantity })
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.error) {
+            console.error("Error updating quantity:", data.error);
+          }
+          recalcTotal();
+        })
+        .catch(error => {
+          console.error("Error:", error);
+        });
+    });
+  });
+
+  // Remove item
+  document.querySelectorAll(".cart-remove").forEach((btn) => {
+    btn.addEventListener("click", function () {
+      const itemId = this.getAttribute("data-item-id");
+      const row = this.closest("tr");
+
+      fetch(`/api/cart/remove/${itemId}`, {
+        method: "DELETE"
+      })
+        .then(response => response.json())
+        .then(data => {
+          if (data.error) {
+            console.error("Error removing item:", data.error);
+          } else {
             row.remove();
             recalcTotal();
+
+            // Check if cart is empty
+            const remainingRows = document.querySelectorAll("#shoppingCartTable tbody tr:not(#emptyCartRow)");
+            if (remainingRows.length === 0) {
+              const tbody = document.querySelector("#shoppingCartTable tbody");
+              tbody.innerHTML = `
+                <tr id="emptyCartRow">
+                  <td colspan="5" class="text-center text-muted py-4">Your cart is empty. <a href="/pricing" class="text-info">Browse products</a></td>
+                </tr>
+              `;
+            }
           }
         })
-      );
-      recalcTotal();
-    }
+        .catch(error => {
+          console.error("Error:", error);
+        });
+    });
+  });
 
-    const saveBtn = document.getElementById("saveSettings");
-    const alertBox = document.getElementById("settingsAlert");
-    if (saveBtn && alertBox) {
-      saveBtn.addEventListener("click", () => {
-        alertBox.classList.remove("d-none");
-        alertBox.classList.add("show");
-        setTimeout(() => {
-          alertBox.classList.add("d-none");
-          alertBox.classList.remove("show");
-        }, 2500);
-      });
-    }
-  </script>
+  // Initial calculation
+  recalcTotal();
+</script>
 {% endblock %}
-
